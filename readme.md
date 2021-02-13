@@ -1,11 +1,11 @@
 <div align="center">
 <img src="https://github.com/Jeith/jeith/blob/master/public/assets/welcome.gif?raw=true" alt="Welcome" align="center">
 </div>
+<br />
 
 <div align="center">
 to my personal GitHub profile!
 </div>
-<br />
 <br />
 
 <!-- Social -->
@@ -59,8 +59,11 @@ to my personal GitHub profile!
 
 <div align="center">
 <img src="https://profile-counter.glitch.me/jeith/count.svg" alt="hit counter" align="center">
-<br />
+</div>
 
+<br />
+<br />
+<div align="center">
 <img src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/notepad.gif" alt="Site created with Notepad" height="30" />
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>  
 <img src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/ie_logo.gif" alt="Microsoft Internet Explorer" />
