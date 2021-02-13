@@ -50,14 +50,14 @@ to my personal GitHub profile!
 </tr>
 </table>
 
-<br />
-
 <div align="center">
 <div>
 <img src="https://github.com/Jeith/jeith/blob/master/public/assets/thanks.gif?raw=true" alt="Thanks" align="center">
 </div>
 <p>for visiting my page!</p>
 </div>
+
+<br />
 
 <div align="center">
 <img src="https://profile-counter.glitch.me/jeith/count.svg" alt="hit counter" align="center">
