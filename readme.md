@@ -50,6 +50,8 @@ to my personal GitHub profile!
 </tr>
 </table>
 
+<br />
+
 <div align="center">
 <div>
 <img src="https://github.com/Jeith/jeith/blob/master/public/assets/thanks.gif?raw=true" alt="Thanks" align="center">
@@ -62,12 +64,11 @@ to my personal GitHub profile!
 </div>
 
 <br />
-<br />
+
 <div align="center">
 <img src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/notepad.gif" alt="Site created with Notepad" height="30" />
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>  
 <img src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/ie_logo.gif" alt="Microsoft Internet Explorer" />
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>  
 <img src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/noframes.gif" alt="Microsoft Internet Explorer" />
-
 </div>
