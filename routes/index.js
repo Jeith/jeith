@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+/* GET redirect page. */
+router.get('/*', function(req, res, next) {
+  res.redirect('/');
+});
+
 module.exports = router;

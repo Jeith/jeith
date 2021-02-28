@@ -5,18 +5,50 @@
 	<% include ./partials/head.ejs %>
 </head>
 
-<% include ./partials/header.ejs %>
+<body class="home" id="home">
+	<% include ./partials/header.ejs %>
 
-<body class="home">
 	<section class="hero">
-		<a href="https://github.com/Jeith" class="square-container">
-			<svg>
-				<rect x="0" y="0" fill="none" width="100%" height="100%"/>
-			</svg>
-			<h1>jeith.</h1>
-		</a>
-		
-	</section>
-</body>
+		<div class="rectangle curved" id="rectangle-1"></div>
+		<div class="rectangle curved" id="rectangle-2"></div>
+		<div class="rectangle curved" id="rectangle-3"></div>
+		<div class="rectangle curved" id="rectangle-4"></div>
+		<div class="rectangle curved" id="rectangle-5"></div>
+		<div class="square curved" id="square-1"></div>
+		<div class="square curved" id="square-2"></div>
+		<div class="square curved" id="square-3"></div>
+		<div class="square curved" id="square-4"></div>
+		<div class="square curved" id="square-5"></div>
+		<div class="square curved" id="square-6"></div>
+		<div class="square curved sm" id="square-7"></div>
+		<div class="circle" id="circle-1"></div>
+		<div class="circle" id="circle-2"></div>
+		<div class="circle" id="circle-3"></div>
+		<div class="circle" id="circle-4"></div>
+		<div class="circle" id="circle-5"></div>
+		<div class="circle" id="circle-6"></div>
+		<div class="circle" id="circle-7"></div>
+		<div class="circle" id="circle-8"></div>
 
-<% include ./partials/footer.ejs %>
+		<h1>jeith.</h1>
+	</section>
+
+	<section class="about-me">
+		<div class="textbox">
+			<h1>Hi, my name is Jeith!</h1>
+
+			<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+		</div>
+		<div class="img-wrapper">
+			<img src="./../assets/about-placeholder.jpeg" alt="" />
+		</div>
+	</section>
+
+	<script>
+		this.setTimeout(() => {
+			document.getElementById("home").classList.add("loaded")
+		}, 1000)
+	</script>
+
+	<% include ./partials/footer.ejs %>
+</body>

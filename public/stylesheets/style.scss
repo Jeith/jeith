@@ -1,542 +1,687 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600&display=swap');
+// ~~~~~~~~~~~~~~~~ VARS ~~~~~~~~~~~~~~~~
+$mustard-yellow: #F6CA10;
+$red: #E73A2A;
+$orange: #FC8300;
+$teal: #6CCEAF;
 
-/* VARS
- * =================================
- */
-  $primary: blue;
-  $secondary: red;
+// ~~~~~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~~~~~
+@use "~inter-ui/default" with (
+  $inter-font-display: swap,
+  $inter-font-path: '~inter-ui/Inter (web)'
+);
+@use "~inter-ui/variable" with (
+  $inter-font-display: swap,
+  $inter-font-path: '~inter-ui/Inter (web)'
+);
+ 
+html { font-family: "Inter", "system-ui"; }
+ 
+@supports (font-variation-settings: normal) {
+  html { font-family: "Inter var", "system-ui"; }
+}
 
-  $lightest-grey: #f8f8f8;
-  $light-grey: #e8e8e8;
-  $med-grey: #b8b8b8;
-  $dark-grey: #333;
-  $cb: cubic-bezier(.49,.01,.22,1);
+// ~~~~~~~~~~~~~~~~ MIXINS ~~~~~~~~~~~~~~~~
+@mixin appearance($val) {
+  -webkit-appearance: $val;
+  -moz-appearance: $val;
+  -ms-appearance: $val;
+  -o-appearance: $val;
+  appearance: $val;
+}
 
-/* MIXINS
- * =================================
- */
-  @mixin transform($val) {
-    -webkit-transform: $val;
-    -moz-transform: $val;
-    -ms-transform: $val;
-    transform: $val;
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+  -moz-align-content: $align;
+  -ms-align-content: $align;
+  align-content: $align;
+}
+
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  align-items: $align;
+}
+
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+  -moz-align-self: $align;
+  -ms-align-self: $align;
+  align-self: $align;
+}
+
+@mixin animation($animation, $duration, $timing-function: false, $delay: false, $direction: false, $iteration-count: false) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-name: $animation;
+  -webkit-animation-direction: $direction;
+  -webkit-animation-timing-function: $timing-function;
+  -webkit-animation-iteration-count: $iteration-count;
+
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-name: $animation;
+  -moz-animation-direction: $direction;
+  -moz-animation-timing-function: $timing-function;
+  -moz-animation-iteration-count: $iteration-count;
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-direction: $direction;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: $iteration-count;
+}
+
+@mixin border-box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+}
+
+@mixin clip-path($clip...) {
+  -webkit-clip-path: $clip;
+  -moz-clip-path: $clip;
+  -ms-clip-path: $clip;
+  clip-path: $clip;
+}
+
+@mixin display-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin display-inline-flex {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@mixin filter($value) {
+  -webkit-filter: $value;
+  -moz-filter: $value;
+  -o-filter: $value;
+  filter: $value;
+}
+
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+@mixin justify-content($value) {
+  -webkit-justify-content: $value;
+  justify-content: $value;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
   }
-
-  @mixin transition($val...) {
-    -webkit-transition: $val;
-    -moz-transition: $val;
-    -o-transition: $val;
-    -ms-transition: $val;
-    transition: $val;
+  @-moz-keyframes #{$animationName} {
+    @content;
   }
-
-  @mixin transform-origin ($origin) {
-    moz-transform-origin: $origin;
-    -o-transform-origin: $origin;
-    -ms-transform-origin: $origin;
-    -webkit-transform-origin: $origin;
-    transform-origin: $origin;
+  @keyframes #{$animationName} {
+    @content;
   }
+}
 
-  @mixin display-flex {
-    display: -webkit-flex;
-    display: flex;
-  }
-
-  @mixin display-inline-flex {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -moz-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-
-  @mixin justify-content($value) {
-    -webkit-justify-content: $value;
-    justify-content: $value;
-  }
-  @mixin flex-wrap($wrap) {
-    -webkit-flex-wrap: $wrap;
-    -moz-flex-wrap: $wrap;
-    -ms-flex-wrap: $wrap;
-    flex-wrap: $wrap;
-  }
-
-  @mixin align-content($align) {
-    -webkit-align-content: $align;
-    -moz-align-content: $align;
-    -ms-align-content: $align;
-    align-content: $align;
-  }
-
-  @mixin align-items($align) {
-    -webkit-align-items: $align;
-    -moz-align-items: $align;
-    -ms-align-items: $align;
-    align-items: $align;
-  }
-
-  @mixin align-self($align) {
-    -webkit-align-self: $align;
-    -moz-align-self: $align;
-    -ms-align-self: $align;
-    align-self: $align;
-  }
-
-  @mixin align-content($align) {
-    -webkit-align-content: $align;
-    -moz-align-content: $align;
-    -ms-align-content: $align;
-    align-content: $align;
-  }
-
-  @mixin user-select($val) {
-    -webkit-user-select: $val;
-    -moz-user-select: $val;
-    -ms-user-select: $val;
-    user-select: $val;
-  }
-
-  @mixin appearance($val) {
-    -webkit-appearance: $val;
-    -moz-appearance: $val;
-    -ms-appearance: $val;
-    -o-appearance: $val;
-    appearance: $val;
-  }
-
-  @mixin order($val) {
-    -webkit-box-ordinal-group: $val;
-    -moz-box-ordinal-group: $val;
-    -ms-flex-order: $val;
-    -webkit-order: $val;
-    order: $val;
-  }
-
-  @mixin flex-direction($direction) {
-    -webkit-flex-direction: $direction;
-    -moz-flex-direction: $direction;
-    -ms-flex-direction: $direction;
-    flex-direction: $direction;
-  }
-
-  @mixin flex($fg: 1, $fs: null, $fb: null) {
-
-    // Set a variable to be used by box-flex properties
-    $fg-boxflex: $fg;
-
-    // Box-Flex only supports a flex-grow value so let's grab the
-    // first item in the list and just return that.
-    @if type-of($fg) == 'list' {
-      $fg-boxflex: nth($fg, 1);
-    }
-
-    -webkit-box-flex: $fg-boxflex;
-    -webkit-flex: $fg $fs $fb;
-    -moz-box-flex: $fg-boxflex;
-    -moz-flex: $fg $fs $fb;
-    -ms-flex: $fg $fs $fb;
-    flex: $fg $fs $fb;
-  }
-
-  @mixin clip-path($clip...) {
-    -webkit-clip-path: $clip;
-    -moz-clip-path: $clip;
-    -ms-clip-path: $clip;
-    clip-path: $clip;
-  }
-
-  @mixin animation($animation, $duration, $timing-function: false, $delay: false, $direction: false, $iteration-count: false) {
-    -webkit-animation-delay: $delay;
-    -webkit-animation-duration: $duration;
-    -webkit-animation-name: $animation;
-    -webkit-animation-direction: $direction;
-    -webkit-animation-timing-function: $timing-function;
-    -webkit-animation-iteration-count: $iteration-count;
-
-    -moz-animation-delay: $delay;
-    -moz-animation-duration: $duration;
-    -moz-animation-name: $animation;
-    -moz-animation-direction: $direction;
-    -moz-animation-timing-function: $timing-function;
-    -moz-animation-iteration-count: $iteration-count;
-
-    animation-delay: $delay;
-    animation-duration: $duration;
-    animation-name: $animation;
-    animation-direction: $direction;
-    animation-timing-function: $timing-function;
-    animation-iteration-count: $iteration-count;
+@mixin linear-gradient($direction, $color-stops...) {
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
   }
 
-  @mixin keyframes($animationName) {
-    @-webkit-keyframes #{$animationName} {
-      @content;
-    }
-    @-moz-keyframes #{$animationName} {
-      @content;
-    }
-    @keyframes #{$animationName} {
-      @content;
-    }
-  }
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
 
-  @mixin border-box {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-  }
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
 
-  @mixin filter($value) {
-    -webkit-filter: $value;
-    -moz-filter: $value;
-    -o-filter: $value;
-    filter: $value;
-  }
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -ms-transform: $val;
+  transform: $val;
+}
 
-  @mixin linear-gradient($direction, $color-stops...) {
-    @if is-direction($direction) == false {
-      $color-stops: $direction, $color-stops;
-      $direction: 180deg;
-    }
+@mixin transition($val...) {
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -o-transition: $val;
+  -ms-transition: $val;
+  transition: $val;
+}
 
-    background: nth(nth($color-stops, 1), 1);
-    background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
-    background: linear-gradient($direction, $color-stops);
-  }
-  @function is-direction($value) {
-    $is-keyword: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left), $value);
-    $is-angle: type-of($value) == 'number' and index('deg' 'grad' 'turn' 'rad', unit($value));
+@mixin transform-origin ($origin) {
+  moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
 
-    @return $is-keyword or $is-angle;
-  }
-  @function legacy-direction($value) {
-    @if is-direction($value) == false {
-      @error "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
-    }
+@mixin user-select($val) {
+  -webkit-user-select: $val;
+  -moz-user-select: $val;
+  -ms-user-select: $val;
+  user-select: $val;
+}
 
-    $conversion-map: (
-      to top          : bottom,
-      to top right    : bottom left,
-      to right top    : left bottom,
-      to right        : left,
-      to bottom right : top left,
-      to right bottom : left top,
-      to bottom       : top,
-      to bottom left  : top right,
-      to left bottom  : right top,
-      to left         : right,
-      to left top     : right bottom,
-      to top left     : bottom right
-    );
+// ~~~~~~~~~~~~~~~~ KEYFRAMES ~~~~~~~~~~~~~~~~
+@keyframes bobble-1 {
+  0% {
+    transform: translate3d(0px, 0px, 0px) rotate(17deg);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(-25px, -25px, 0px) rotate(17deg);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotate(17deg);
+  }
+}
 
-    @if map-has-key($conversion-map, $value) {
-      @return map-get($conversion-map, $value);
-    }
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-    @return 90deg - $value;
+@keyframes rotating-counter-clockwise {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 
-  @mixin custom-scrollbar {
-    -webkit-overflow-scrolling: touch;
-    ::-webkit-scrollbar {
-      width: 4px;
-      height: 4px;
-    }
-    ::-webkit-scrollbar-track {
-      // Track
-      background: #f7f7f7;
-    }
-    ::-webkit-scrollbar-thumb {
-      // Handle
-      background: rgba(0,0,0,.2);
-      border-radius: 10px;
-    }
+@keyframes rotate-and-stop {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(45deg);
+  }
+}
 
-/* GENERAL
- * =================================
- */
-  @charset "UTF-8";
-  html, body {
-    min-height: 100vh;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
+@keyframes rotate-and-stop-2 {
+  0% {
+    transform: rotate(0deg);
   }
-  * {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    @include border-box;
-    font-family: 'Helvetica', helvetica, arial, sans-serif;
-    font-weight: unset;
+  100% {
+    transform: rotate(-65deg);
   }
-  a {
-    text-decoration: none;
-    color: $dark-grey;
-    cursor: pointer;
-    &:hover {
-      text-decoration: none;
-    }
-  }  
-  .hide,
-  .hidden {
-    display: none !important;
-  }
-  span {
-    font: inherit;
-    color: inherit;
-  }
-  h1, h2, h3, h4, h5, h6 {
+}
 
-    display: block;
-    width: 100%;
+@keyframes squish-1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+    height: 15px;
+    width: 25px;
   }
-  h1, h2, h3 {
-    font-family: 'Times', serif;
-    margin-bottom: 20px;
+  50% {
+    transform: translate3d(-5px, 0, 0);
+    height: 25px;
+    width: 15px;
   }
-  h1 {
+  100% {
+    transform: translate3d(0, 0, 0);
+    height: 15px;
+    width: 25px;
+  }
+}
+@keyframes disappearing-color-change-1 {
+  0% {
+    background-color: $orange;
+    height: 35px;
+    width: 35px;
+  }
+  25% {
+    background-color: $orange;
+    height: 0;
+    width: 0;
+    transform: translateY(15px);
+  }
+  26% {
+    background-color: $teal;
+    height: 0;
+    width: 0;
+  }
+  50% {
+    background-color: $teal;
+    height: 35px;
+    width: 35px;
+  }
+  75% {
+    background-color: $teal;
+    height: 0;
+    width: 0;
+    transform: translateX(25px);
+  }
+  76% {
+    background-color: $orange;
+    height: 0;
+    width: 0;
+  }
+  100% {
+    background-color: $orange;
+    height: 35px;
+    width: 35px;
+  }
+}
+@keyframes disappearing-color-change-2 {
+  0% {
+    background-color: $orange;
+    height: 35px;
+    width: 35px;
+  }
+  25% {
+    background-color: $teal;
+    height: 0;
+    width: 0;
+    transform: translate3d(15px, 0, 0);
+  }
+  50% {
+    background-color: $teal;
+    height: 35px;
+    width: 35px;
+  }
+  75% {
+    background-color: $teal;
+    height: 0;
+    width: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+  100% {
+    background-color: $orange;
+    height: 35px;
+    width: 35px;
+    transform: translate3d(0, 0, 0);
+  }
+}
 
-  }
-  h2 {
-
-  }
-  h3 {
-
-  }
-  h4, h5, h6 {
-    font-family: 'Helvetica', sans-serif;
-    margin-bottom: 15px;
-  }
-  h4 {
-
-  }
-  h5 {
-
-  }
-  h6 {
-    
-  }
-  p, li {
-    font-size: 15px;
-    line-height: 1.7;
-    &.sm {
-      font-size: 13px;
-    }
-    &.xsm {
-      font-size: 11px;
-    }
-  }
-  p {
-    &:not(:last-child) {
-      margin-bottom: 15px;
-    }
-  }
-  ul {
-    list-style: none;
-    padding-left: 24px;
-    li {
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
-      &:before {
-        content: '';
-        position: absolute;
-        height: 6px;
-        width: 6px;
-        background: $primary;
-        left: -16px;
-        top: 8px;
-      }
-    }
-  }
-  a.button,
-  button.button,
-  span.button {
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: $primary;
-    padding: 12px 32px;
-    @include display-inline-flex;
-    @include justify-content(center);
-    @include align-items(center);
-    @include transition(all .1s ease-in-out);
-    border: none;
-  }
-  span.img-wrapper {
-    @include display-inline-flex;
-    @include align-items(flex-start);
-    img {
-      width: 100%;
-    }
-  }
-  .textbox {
-    width: 100%;
-    &.center {
-      text-align: center;
-    }
-    &.light {
-      color: white;
-    }
-  }
-  section {
-    width: 100%;
-    background-color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    &.hero {
-      .section-wrapper {
-        @include align-items(center);
-      }
-    }
-    .section-wrapper {
-      padding: 60px;
-      @include display-flex;
-      @include flex-wrap(wrap);
-      @include align-items(flex-start);
-      max-width: 1440px;
-      height: 100%;
-      margin: 0 auto;
-      &.full {
-        max-width: none;
-      }
-    }
-  }
-  .col {
-    padding: 0 20px;
-    @include flex(unset);
-    max-width: none;
-    &.col-12 {
-      width: 100%;
-    }
-    &.col-11 {
-      width: 91.666666%;
-    }
-    &.col-10 {
-      width: 83.333333%;
-    }
-    &.col-9 {
-      width: 75%;
-    }
-    &.col-8 {
-      width: 66.666666%;
-    }
-    &.col-7 {
-      width: 58.333333%;
-    }
-    &.col-6 {
-      width: 50%;
-    }
-    &.col-5 {
-      width: 41.666666%;
-    }
-    &.col-4 {
-      width: 33.333333%;
-    }
-    &.col-3 {
-      width: 25%;
-    }
-    &.col-2 {
-      width: 16.666666%
-    }
-    &.col-1 {
-      width: 8.333333%
-    }
-  }
-
-
-
-header {
-  display: none;
-  position: fixed;
-  top: 0;
-  z-index: 100;
+// ~~~~~~~~~~~~~~~~ GENERAL ~~~~~~~~~~~~~~~~
+@charset "UTF-8";
+html, body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  @include border-box;
+  font-weight: unset;
+}
+h1, h2, h3, h4, h5, h6 {
+  display: block;
   width: 100%;
-  min-height: 40px;
-  @include transition(all .2s ease-in-out);
-  &.scrolled {
-    background-color: white;
-  }
-  #header-wrapper {
-    @include display-flex;
-    @include justify-content(space-between);
-    @include align-items(center);
+}
+span {
+  font: inherit;
+  color: inherit;
+}
+section {
+  width: 100%;
+}
+.hide,
+.hidden {
+  display: none !important;
+}
+.img-wrapper{
+  img{
     width: 100%;
-    max-width: 1440px;
-    padding: 0 60px;
   }
 }
 
 body {
   &.home {
+    max-height: 100vh;
+    overflow: hidden;
+    &.loaded{
+      max-height: 100%;
+      overflow: initial;
+      .hero {
+        &:after{
+          opacity: 0;
+        }
+      }
+    }
     .hero {
       @include display-flex;
       @include justify-content(center);
       @include align-items(center);
-      background-color: black;
-      border: 15px solid white;
+      background-color: $mustard-yellow;
       min-height: 100vh;
       min-width: calc(100vw - 30px);
 
-      .square-container{
-        @include display-flex;
-        @include justify-content(center);
-        @include align-items(center);
-        height: 250px;
-        width: 250px;
-        cursor: pointer;
+      &:after{
+        content: "";
+        @include transition(all .25s ease-in-out);
+        background-color: $red;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        z-index: 15;
+      }
 
-        &:hover{
-          rect {
-            stroke-width: 1;
-            stroke-dasharray: 15, 310;
-            stroke-dashoffset: 48;
-            transition: all 2.35s cubic-bezier(0.19, 1, 0.22, 1);
-            stroke-opacity: 0;
-          }
-          h1{
-            &:after{
-              width: 20%;
-              margin-left: 40%;
-            }
-          }
-        }
+      h1{
+        @include user-select(none);
+        cursor: default;
+        text-align: center;
+        color: white;
+        font-size: 225px;
+        font-weight:700;
+      }
 
-        h1{
-          text-align: center;
-          color: white;
+      .rectangle{
+        transform: rotate(45deg);
+        height: 25px;
+        width: 25px;
 
-          &:after{
-            content: "";
-            @include transition(all .5s ease-in-out);
-            width: 0%;
-            margin-left: 50%;
-            height: 1px;
-            background-color: white;
-            position: absolute;
-            bottom: -7px;
-            left: 0;
-          }
-        }
-        svg {
-          height: 45px;
-          left: 0;
+        &#rectangle-1{
+          background-color: $red;
+          transform: rotate(45deg);
           position: absolute;
-          top: 0; 
-          width: 100%; 
-          height: 100%; 
+          right: 18%;
+          top: 12%;
+          height: 15px;
         }
-        
-        rect {
-          @include transition(all 0.35s linear);
-          fill: none;
-          stroke: #fff;
-          stroke-width: 2;
-          stroke-dasharray: 422, 0;
+        &#rectangle-2{
+          background-color: $red;
+          transform: rotate(-60deg);
+          position: absolute;
+          left: 27%;
+          bottom: 15%;
+          width: 15px;
+        }
+        &#rectangle-3{
+          background-color: $red;
+          transform: rotate(45deg);
+          position: absolute;
+          left: 9%;
+          top: 6%;
+          width: 15px;
+        }
+        &#rectangle-4{
+          background-color: $teal;
+          transform: rotate(45deg);
+          position: absolute;
+          right: 9%;
+          bottom: 22%;
+          width: 15px;
+        }
+        &#rectangle-5{
+          background-color: $teal;
+          transform: rotate(74deg);
+          position: absolute;
+          left: 38%;
+          top: 12%;
+          width: 15px;
+        }
+      }
+      .square{
+        @include transition(all .25s ease-in-out);
+        height: 65px;
+        width: 65px;
+
+        &.sm{
+          width: 50px;
+          height: 50px;
+        }
+
+        &#square-1{
+          @include animation(rotating-counter-clockwise, 60s, $timing-function: linear, $iteration-count: infinite);
+          background-color: $red;
+          transform: rotate(-3deg);
+          position: absolute;
+          right: 35%;
+          bottom: 20%;
+        }
+        &#square-2{
+          @include animation(rotate-and-stop-2, 10s, $timing-function: ease-in-out, $iteration-count: 1);
+          background-color: $red;
+          transform: rotate(-65deg);
+          position: absolute;
+          left: 20%;
+          top: 21%;
+        }
+        &#square-3{
+          background-color: $teal;
+          transform: rotate(45deg);
+          position: absolute;
+          left: 9%;
+          bottom: 6%;
+        }
+        &#square-4{
+          @include animation(rotate-and-stop, 10s, $timing-function: ease-in-out, $iteration-count: 1);
+          background-color: $red;
+          transform: rotate(45deg);
+          position: absolute;
+          right: 3%;
+          top: 29%;
+        }
+        &#square-5{
+          @include animation(rotating, 60s, $timing-function: linear, $iteration-count: infinite);
+          background-color: $orange;
+          transform: rotate(-24deg);
+          position: absolute;
+          right: 36%;
+          top: -2%
+        }
+        &#square-6{
+          @include animation(rotating, 60s, $timing-function: linear, $iteration-count: infinite);
+          background-color: $orange;
+          transform: rotate(-33deg);
+          position: absolute;
+          left: -1%;
+          top: 47%;
+        }
+        &#square-7{
+          @include animation(bobble-1, 21s, $timing-function:ease-in-out, $iteration-count:infinite);
+          background-color: $teal;
+          position: absolute;
+          right: 22%;
+          top: 37%;
+        }
+      }
+      .circle{
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+
+        &#circle-1{
+          background-color: $orange;
+          position: absolute;
+          right: 17%;
+          bottom: 5%;
+        }
+        &#circle-2{
+          // @include animation(disappearing-color-change-1, 10s, $timing-function: linear, $iteration-count: infinite);
+          background-color: $orange;
+          position: absolute;
+          left: 17%;
+          bottom: 32%;
+        }
+        &#circle-3{
+          // @include animation(bobble-1, 30s, $timing-function:ease-in-out, $iteration-count:infinite);
+          background-color: $red;
+          position: absolute;
+          left: 48%;
+          top: 22%;
+        }
+        &#circle-4{
+          @include animation(bobble-1, 28s, $timing-function:ease-in-out, $iteration-count:infinite);
+          background-color: $teal;
+          position: absolute;
+          left: 6%;
+          top: 22%;
+        }
+        &#circle-5{
+          background-color: $orange;
+          position: absolute;
+          right: 11%;
+          bottom: 40%;
+          width: 60px;
+          height: 60px;
+        }
+        &#circle-6{
+          @include transition(all .25s ease-in-out);
+          background-color: $teal;
+          transform: rotate(45deg);
+          position: absolute;
+          right: 2%;
+          top: 1%;
+          height: 74px;
+        }
+        &#circle-7{
+          @include transition(all .25s ease-in-out);
+          background-color: $teal;
+          transform: rotate(-13deg);
+          position: absolute;
+          left: 41%;
+          bottom: 26%;
+          width: 65px;
+
+          &:hover {
+            transform: rotate(0deg);
+            background-color: #385CAD;
+            top: 0;
+            right: 0;
+            border-radius: 0;
+            height: 100vh;
+            width: 100vw
+          }
+        }
+        &#circle-8{
+          background-color: $orange;
+          transform: rotate(-13deg);
+          position: absolute;
+          left: 52%;
+          bottom: 10%;
+        }
+      }
+      .curved{
+        border-radius: 5px;
+      }
+    }
+    .hero {
+      @include display-flex;
+      @include justify-content(center);
+      @include align-items(center);
+    }
+  }
+  .about-me{
+    @include display-flex;
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    padding: 60px;
+    background-color: $orange;
+    border: 50px solid $mustard-yellow;
+    border-top: none;
+
+    &:after{
+      content: "";
+      @include box-shadow(-1px 0px 9px -1px rgba(0, 0, 0, .50));
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+    }
+
+    h1, span{
+      display: inline;
+      background-color: black;
+      color: white;
+    }
+    h1{
+      margin-left: 20px;
+      font-size: 33px;
+      font-weight: 700;
+      z-index: 1;
+
+      &:before{
+        content: "";
+        background-color: black;
+        transform: skewX(-25deg);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -3%;
+        width: 106%;
+        height: 100%;
+        z-index: -1;
+      }
+    }
+    span{
+      line-height: 22px;
+
+      &:before{
+        content: "";
+        width: 100%;
+        height: 15px;
+        display: block;
+      }
+    }
+    .textbox{
+      display: inline;
+      width: 60%;
+    }
+    .img-wrapper{
+      width: 25%;
+
+      &:before{
+        content: "";
+        background-color: $red;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover{
+        &:before{
+          top: -15px;
+          left: -15px;
+          width: calc(100% + 30px);
+          height: calc(100% + 30px);
         }
       }
     }
@@ -559,27 +704,14 @@ footer {
 @media all and (max-width: 1139px) {
 }
 @media all and (max-width: 1023px) {
-  section .section-wrapper,
-  header #header-wrapper,
-  footer #footer-wrapper {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 }
 @media all and (max-width: 900px) {
 }
 @media all and (max-width: 767px) {
 }
 @media all and (max-width: 639px) {
-  section .section-wrapper,
-  header #header-wrapper,
-  footer #footer-wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 @media all and (max-width: 500px) {
 }
 @media all and (max-width: 400px) {
 }
-
