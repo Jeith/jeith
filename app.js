@@ -1,12 +1,14 @@
 const createError = require('http-errors')
 const express = require('express')
+const Raven = require('raven')
 const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const bodyParser = require('body-parser')
+require('dotenv').config()
+
 const app = express()
 const indexRouter = require('./routes/index')
-require('dotenv').config()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
@@ -21,19 +23,19 @@ app.use(bodyParser.text())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 
-// ============= ROUTES  ===============
+//= =====ROUTES=============
 app.use('/', indexRouter)
 
-// =====================================
-// ========== ERROR HANDLERS ===========
-// =====================================
+//= =====================================
+//= ===========ERROR HANDLERS============
+//= =====================================
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
   next(createError(404))
 })
 
-const port = 1334
+const port = process.env.PORT || 1334
 
 app.listen(port, () => {
   console.log(`🚀 Listening on Port ${port}!`)
