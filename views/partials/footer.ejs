@@ -1,4 +1,10 @@
-<footer>
+<footer id="go-to-top">
     <i class="fas fa-arrow-up"></i>
     <h4>Back to top</h4>
 </footer>
+<script>
+    $('#go-to-top').click(function(){ 
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false; 
+    });
+</script>

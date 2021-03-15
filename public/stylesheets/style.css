@@ -124,15 +124,16 @@ html, body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased; }
+  -o-font-smoothing: antialiased;
+  overflow-x: hidden; }
 
 * {
-  position: relative;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
   font-weight: unset; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -523,7 +524,8 @@ body.home {
   overflow: hidden; }
   body.home.loaded {
     max-height: 100%;
-    overflow: initial; }
+    overflow: initial;
+    overflow-x: hidden; }
     body.home.loaded .hero:after {
       opacity: 0; }
   body.home .hero {
@@ -546,7 +548,7 @@ body.home {
       -ms-transition: all 0.25s ease-in-out;
       transition: all 0.25s ease-in-out;
       pointer-events: none;
-      background-color: #E73A2A;
+      background-color: #F6CA10;
       width: 100vw;
       height: 100vh;
       position: fixed;
@@ -584,14 +586,18 @@ body .about-me {
     flex-direction: row;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     background-color: #FC8300;
     border-top: none;
     padding: 60px; }
     body .about-me .section-wrapper:after {
       content: "";
-      box-shadow: -1px 0px 9px -1px rgba(0, 0, 0, 0.5);
-      -webkit-box-shadow: -1px 0px 9px -1px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: -1px 0px 9px -1px rgba(0, 0, 0, 0.5);
+      box-shadow: -1px 0px 9px -1px rgba(232, 58, 42, 0.5);
+      -webkit-box-shadow: -1px 0px 9px -1px rgba(232, 58, 42, 0.5);
+      -moz-box-shadow: -1px 0px 9px -1px rgba(232, 58, 42, 0.5);
       pointer-events: none;
       position: absolute;
       top: 0px;
@@ -749,6 +755,9 @@ body .project-section {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  box-shadow: -1px 0px 9px -1px rgba(232, 58, 42, 0.5);
+  -webkit-box-shadow: -1px 0px 9px -1px rgba(232, 58, 42, 0.5);
+  -moz-box-shadow: -1px 0px 9px -1px rgba(232, 58, 42, 0.5);
   padding: 60px 110px 110px;
   background-color: #FC8300; }
   body .project-section h2 {
@@ -761,20 +770,30 @@ body .project-section {
     display: flex;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-    padding-top: 100px; }
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 115px;
+    border-right: 25px solid #E73A2A;
+    padding-right: 25px; }
     body .project-section .project.first {
-      padding-top: 80px; }
+      margin-top: 80px; }
     body .project-section .project.reverse {
       -webkit-flex-direction: row-reverse;
       -moz-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse; }
+      flex-direction: row-reverse;
+      border-left: 25px solid #E73A2A;
+      border-right: none;
+      padding-right: 0;
+      padding-left: 25px; }
       body .project-section .project.reverse .image-container:before {
         left: 15px;
         border-radius: 0 0 25px 0; }
     body .project-section .project .image-container {
       width: 47%;
-      height: 260px; }
+      height: 20vw; }
       body .project-section .project .image-container:before {
         content: "";
         -webkit-transition: all 0.25s ease-in-out;
@@ -850,5 +869,82 @@ footer {
     text-align: center;
     font-weight: 700;
     font-size: 16px; }
+
+@media all and (max-width: 1023px) {
+  body.home .hero h1 {
+    font-size: 175px; } }
+@media all and (max-width: 900px) {
+  body.home .about-me .section-wrapper {
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    body.home .about-me .section-wrapper .technologies {
+      padding-bottom: 40px;
+      padding-top: 30px; }
+      body.home .about-me .section-wrapper .technologies h2 {
+        font-size: 26px; }
+  body.home .about-me .textbox {
+    width: 100%; }
+  body.home .about-me .img-wrapper {
+    width: 35%; }
+  body .project-section {
+    padding: 60px; }
+    body .project-section .project {
+      -webkit-flex-direction: column-reverse;
+      -moz-flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      padding-right: 60px; }
+      body .project-section .project.reverse {
+        -webkit-flex-direction: column-reverse;
+        -moz-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        padding-left: 60px; }
+      body .project-section .project .image-container {
+        width: 100%;
+        height: 40vw;
+        margin-top: 50px; }
+        body .project-section .project .image-container:before {
+          top: -15px;
+          height: calc(100% + 15px);
+          border-radius: 0 0 0 15px; }
+      body .project-section .project .text {
+        width: 100%; } }
+@media all and (max-width: 767px) {
+  body.home .project-section .image-container {
+    height: 37vw; }
+  body.home .about-me .section-wrapper {
+    padding: 40px; } }
+@media all and (max-width: 639px) {
+  body.home .about-me .section-wrapper h2 {
+    font-size: 27px; }
+  body.home .project-section .image-container {
+    height: 34vw; } }
+@media all and (max-width: 500px) {
+  body.home .hero h1 {
+    font-size: 130px; }
+  body.home .project-section .image-container {
+    height: 42vw; }
+  body.home .about-me .section-wrapper .technologies h2 {
+    font-size: 26px; }
+  body.home .about-me .img-wrapper {
+    width: 100%; }
+  body .project-section {
+    padding: 25px;
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    body .project-section .project {
+      padding-right: 25px; }
+      body .project-section .project.first {
+        margin-top: 60px; }
+      body .project-section .project.reverse {
+        padding-left: 25px; } }
+@media all and (max-width: 400px) {
+  body.home .hero h1 {
+    font-size: 110px; } }
 
 /*# sourceMappingURL=style.css.map */
