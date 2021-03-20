@@ -214,6 +214,9 @@
 		this.setTimeout(() => {
 			document.getElementById("home").classList.add("loaded")
 		}, 750)
+		$("#square-1").click(() => {
+			$("#home").toggleClass("dark-mode")
+		})
 	</script>
 
 	<% include ./partials/footer.ejs %>

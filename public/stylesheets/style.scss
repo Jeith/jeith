@@ -409,11 +409,20 @@ body {
 
     &#square-1{
       @include animation(rotating-counter-clockwise, 60s, $timing-function: linear, $iteration-count: infinite);
+      cursor: pointer;
       background-color: $red;
       transform: rotate(-3deg);
       position: absolute;
       right: 35%;
       bottom: 20%;
+
+      &:hover{
+        border-radius: 50px;
+        height: 85px;
+        width: 85px;
+        right: 34%;
+        bottom: 19%;
+      }
     }
     &#square-2{
       @include animation(rotate-and-stop-2, 10s, $timing-function: ease-in-out, $iteration-count: 1);
@@ -558,6 +567,7 @@ body {
   }
 
   &.home {
+    @include transition(all .25s ease-in-out);
     max-height: 100vh;
     overflow: hidden;
 
@@ -571,22 +581,83 @@ body {
           opacity: 0;
         }
       }
-      // &:after{
-      //   content: "";
-      //   width: 100vw;
-      //   height: 100vh;
-      //   background-color: $mustard-yellow;
-      //   position: absolute;
-      //   top: 0;
-      //   left: 0;
-      //   z-index: 35;
-      //   opacity: 0;
-      // }
+    }
+
+    &.dark-mode{
+      .square{
+        &#square-3{
+          background-color: $blue;
+        }
+        &#square-7{
+          background-color: $blue;
+        }
+        &#square-8{
+          background-color: $blue;
+        }
+      }
+      .rectangle{
+        &#rectangle-1{
+          background-color: $blue;
+        }
+        &#rectangle-2{
+          background-color: $blue;
+        }
+        &#rectangle-4{
+          background-color: $blue;
+        }
+        &#rectangle-5{
+          background-color: $blue;
+        }
+        &#rectangle-6{
+          background-color: $blue;
+        }
+      }
+      .circle{
+        &#circle-4{
+          background-color: $blue;
+        }
+        &#circle-6{
+          background-color: $blue;
+        }
+        &#circle-7{
+          background-color: $blue;
+        }
+      }
+      .hero {
+        background-color: #000000;
+      }
+      .about-me{
+        background-color: #000000;
+
+        .section-wrapper{
+          background-color: $red;
+          border-radius: 25px;
+
+          .img-wrapper{
+            &:before{
+              background-color: #355CB0;
+            }
+          }
+        }
+      }
+      .project-section{
+        background-color: $red;
+
+        .project{
+          border-color: black;
+          .image-container{
+            &:before{
+              background-color: black;
+            }
+          }
+        }
+      }
     }
     .hero {
       @include display-flex;
       @include justify-content(center);
       @include align-items(center);
+      @include transition(all .25s ease-in-out);
       background-color: $mustard-yellow;
       min-height: 100vh;
       min-width: calc(100vw - 30px);
@@ -614,13 +685,9 @@ body {
         font-weight:700;
       }
     }
-    .hero {
-      @include display-flex;
-      @include justify-content(center);
-      @include align-items(center);
-    }
   }
   .about-me{
+    @include transition(all .25s ease-in-out);
     background-color: #F6CA10;
 
     .section-wrapper{
