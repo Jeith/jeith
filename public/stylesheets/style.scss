@@ -335,8 +335,14 @@ section {
     width: 100%;
   }
 }
-
 body {
+  .background-shapes{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   .rectangle{
     transform: rotate(45deg);
     height: 25px;
@@ -818,19 +824,25 @@ body {
         }
       }
       .text{
-        @include display-flex;
-        @include flex-direction(column);
+        display: inline;
         width: 47%;
 
         h4{
+          width: 100%;
           font-size: 26px;
           font-weight: 700;
           padding: 5px 13px;
           border-radius: 90px 100px 35px 80px;
         }
-        span{
+        a{
+          width: 100%;
           display: block;
+          margin-bottom: 15px;
+        }
+        span{
           margin-top: 15px;
+          display: inline;
+          line-height: 22px;
         }
       }
       .technologies-container{
@@ -957,6 +969,7 @@ footer {
   body {
     &.home {
       .about-me{
+        padding: 20px;
         .section-wrapper{
           h2{
             font-size: 27px;
@@ -973,6 +986,17 @@ footer {
 }
 @media all and (max-width: 500px) {
   body {
+    .circle{
+      &#circle-7{
+        display: none;
+      }
+    }
+    .square{
+      &#square-1{
+        right: 25%;
+        bottom: 24%;
+      }
+    }
     &.home {
       .hero {
         h1{
@@ -980,15 +1004,40 @@ footer {
         }
       }
       .project-section{
+        .project{
+          width: 100%;
+
+          h4{
+            font-size: 20px;
+          }
+        }
         .image-container{
           height: 42vw;
         }
       }
       .about-me{
         .section-wrapper{
+          padding: 30px 20px;
+
+          .img-wrapper{
+            &:before{
+              top: 5px;
+              left: 10px;
+            }
+          }
+
+          h2{
+            font-size: 20px;
+          }
           .technologies{
+            padding-top: 20px;
+            padding-bottom: 20px;
+
             h2{
-              font-size: 26px;
+              font-size: 20px;
+            }
+            p{
+              font-size: 15px;
             }
           }
         }
@@ -1017,12 +1066,38 @@ footer {
     }
   }
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 400px){
   body{
     &.home {
       .hero {
+        padding: 48px;
+
         h1{
           font-size: 110px;
+        }
+      }
+      .about-me{
+        .section-wrapper{
+          h2{
+            font-size: 20px;
+            margin-left: 10px;
+          }
+
+          p{
+            font-size: 14px;
+          }
+          .technologies{
+            .technology{
+              margin: 0px 11px 9px 0;
+            }
+            h2{
+              font-size: 16px;
+              margin-left: 10px;
+            }
+            p{
+              font-size: 14px;
+            }
+          }
         }
       }
     }

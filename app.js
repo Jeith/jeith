@@ -35,7 +35,7 @@ app.use((req, res, next) => {
   next(createError(404))
 })
 
-const port = process.env.PORT || 1334
+const port = process.env.PORT || 1333
 
 app.listen(port, () => {
   console.log(`🚀 Listening on Port ${port}!`)
