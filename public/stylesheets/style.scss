@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 100%;
 }
-h2, h4, span{
+h2, h3, h4, span{
   display: inline;
   background-color: black;
   color: white;
@@ -543,16 +543,6 @@ body {
       left: 41%;
       bottom: 26%;
       width: 65px;
-
-      &:hover {
-        transform: rotate(0deg);
-        background-color: #385CAD;
-        top: 0;
-        right: 0;
-        border-radius: 0;
-        height: 100vh;
-        width: 100vw
-      }
     }
     &#circle-8{
       background-color: $orange;
@@ -585,6 +575,9 @@ body {
 
     &.dark-mode{
       .square{
+        &#square-1{
+          background-color: $mustard-yellow;
+        }
         &#square-3{
           background-color: $blue;
         }
@@ -635,7 +628,7 @@ body {
 
           .img-wrapper{
             &:before{
-              background-color: #355CB0;
+              background-color: black;
             }
           }
         }
@@ -648,6 +641,15 @@ body {
           .image-container{
             &:before{
               background-color: black;
+            }
+          }
+          &:first-of-type{
+            .text{
+              h3{
+                &:first-of-type{
+                  color: $blue;
+                }
+              }
             }
           }
         }
@@ -683,6 +685,7 @@ body {
         color: white;
         font-size: 225px;
         font-weight:700;
+        text-shadow: 0px 0px 1px rgba(0,0,0,.7);
       }
     }
   }
@@ -718,6 +721,13 @@ body {
         width: 100%;
         height: 15px;
         display: block;
+      }
+      a{
+        background: black;
+        color: white;
+        display: inline;
+        text-decoration: none;
+        font-weight: 700;
       }
     }
     .textbox{
@@ -797,7 +807,7 @@ body {
           color: $orange;
         }
         &.blue{
-          color: $blue;
+          color: #718CC7;
         }
         &.yellow{
           color: $mustard-yellow;
@@ -873,8 +883,9 @@ body {
       .image-wrapper{
         width: 100%;
         height: 100%;
-        overflow: auto;
-  
+        overflow-y: auto;
+        overflow-x: hidden;
+
         &:before{
           content: "";
           @include transition(all .25s ease-in-out);
@@ -894,7 +905,8 @@ body {
         display: inline;
         width: 47%;
 
-        h4{
+        h3{
+          @include transition(all .25s ease-in-out);
           width: 100%;
           font-size: 26px;
           font-weight: 700;
@@ -905,11 +917,20 @@ body {
           width: 100%;
           display: block;
           margin-bottom: 15px;
+          cursor: pointer;
         }
         span{
           margin-top: 15px;
           display: inline;
           line-height: 22px;
+
+          a{
+            background: black;
+            color: white;
+            display: inline;
+            text-decoration: none;
+            font-weight: 700;
+          }
         }
       }
       .technologies-container{
@@ -1058,12 +1079,12 @@ footer {
         display: none;
       }
     }
-    .square{
-      &#square-1{
-        right: 25%;
-        bottom: 24%;
-      }
-    }
+    // .square{
+    //   &#square-1{
+    //     right: 25%;
+    //     bottom: 24%;
+    //   }
+    // }
     &.home {
       .hero {
         h1{
@@ -1074,7 +1095,7 @@ footer {
         .project{
           width: 100%;
 
-          h4{
+          h3{
             font-size: 20px;
           }
         }
@@ -1095,6 +1116,7 @@ footer {
 
           h2{
             font-size: 20px;
+            margin-left: calc(20px - 2%);
           }
           .technologies{
             padding-top: 20px;

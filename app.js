@@ -22,7 +22,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.text())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-
 //= =====ROUTES=============
 app.use('/', indexRouter)
 
