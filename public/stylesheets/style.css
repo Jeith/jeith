@@ -1,17 +1,10 @@
-@use "~inter-ui/default" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
-);
-@use "~inter-ui/variable" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
-);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 html {
   font-family: "Inter", "system-ui"; }
 
 @supports (font-variation-settings: normal) {
   html {
-    font-family: "Inter var", "system-ui"; } }
+    font-family: "Inter", "system-ui"; } }
 @keyframes bobble-1 {
   0% {
     transform: translate3d(0px, 0px, 0px) rotate(17deg);

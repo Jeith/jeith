@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 // ~~~~~~~~~~~~~~~~ VARS ~~~~~~~~~~~~~~~~
 $mustard-yellow: #F6CA10;
 $red: #E73A2A;
@@ -6,19 +8,10 @@ $blue: #355CB0;
 $teal: #6CCEAF;
 
 // ~~~~~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~~~~~
-@use "~inter-ui/default" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
-);
-@use "~inter-ui/variable" with (
-  $inter-font-display: swap,
-  $inter-font-path: '~inter-ui/Inter (web)'
-);
- 
 html { font-family: "Inter", "system-ui"; }
  
 @supports (font-variation-settings: normal) {
-  html { font-family: "Inter var", "system-ui"; }
+  html { font-family: "Inter", "system-ui"; }
 }
 
 // ~~~~~~~~~~~~~~~~ MIXINS ~~~~~~~~~~~~~~~~
