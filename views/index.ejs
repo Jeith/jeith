@@ -52,8 +52,8 @@
 		<div class="section-wrapper">
 			<div class="textbox">
 				<div>
-					<h2>Hi, my name is Jeith!</h2>
-					<span>I'm a full stack software developer from Houston, TX. I've been coding for over 3 years, and I'm most proficent in web development. I first started learning how to code on my own through <a rel="noreferrer" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> and <a rel="noreferrer" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> and started with the basics of HTML, CSS, JavaScript, and Python early 2018. Six months later, I attended <a rel="noreferrer" href="https://www.digitalcrafts.com/" target="_blank">DigitalCrafts</a> where I learned <a rel="noreferrer" href="https://nodejs.org/en/" target="_blank">Node.js</a>, <a rel="noreferrer" href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>, and <a rel="noreferrer" href="https://reactjs.org/" target="_blank">React</a>. Since attending coding bootcamp, I've been working professionally as a software engineer at a startup were I build and deploy web and mobile applications using MERN-stack and various other technologies.</span>
+					<h2>Hi, my name is Keith!</h2>
+					<span>I'm a full stack software developer from Houston, TX. I've been coding for over 3 years, and I'm most proficent in web development. I first started learning how to code on my own through <a rel="noreferrer" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> and <a rel="noreferrer" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> in early 2018. A few months later, I attended <a rel="noreferrer" href="https://www.digitalcrafts.com/" target="_blank">DigitalCrafts</a> where I learned how to develop MERN-stack applications. Since attending coding bootcamp, I've been working professionally as a software engineer at a startup were I build and deploy web and mobile applications using MERN-stack and various other technologies.</span>
 				</div>
 	
 				<div class="technologies">
@@ -79,7 +79,7 @@
 							<p>HTML5</p>
 						</div>
 						<div class="technology" id="sass">
-							<p>Sass</p>
+							<p>Sass/SCSS</p>
 						</div>
 						<div class="technology" id="css">
 							<p>CSS3</p>
@@ -90,12 +90,15 @@
 						<div class="technology">
 							<p>Flask</p>
 						</div>
+						<a rel="noreferrer" href="https://socket.io/" target="_blank" class="technology">
+							<p>Socket.io</p>
+						</a>
 						<div class="technology">
 							<p>PostgreSQL</p>
 						</div>
-						<div class="technology">
+						<a rel="noreferrer" href="https://openlayers.org/" target="_blank" class="technology">
 							<p>OpenLayers</p>
-						</div>
+						</a>
 						<div class="technology">
 							<p>Wordpress</p>
 						</div>
@@ -133,7 +136,7 @@
 				<a id="jeith">
 					<h3>jeith.com</h3>
 				</a>
-				<span>This is the site you're currently on! I started working on this website in early 2021 so that I could have a way to showcase my some of my projects. The goal for the design was to build a minimalist landing page layout and blend it with aesthetics and colors that were commonly used in the 90's.</span>
+				<span>I started working on this website in early 2021 so that I could have a way to showcase my some of my projects. The goal for the design was to build a minimalist landing page layout and blend it with aesthetics and colors that were commonly used in the 90's. This website is also a PWA and will soon have a 100% lighthouse score.</span>
 				<div class="technologies-container">
 					<div class="technology">
 						<p>Technologies Used:</p>
@@ -208,9 +211,6 @@
 		</div>
 	</section>
 	<script>
-		this.setTimeout(() => {
-			// document.getElementById("home").classList.add("loaded")
-		}, 750)
 		$("#square-1").click(() => {
 			$("#home").toggleClass("dark-mode")
 		})
@@ -218,6 +218,5 @@
 			$("#home").toggleClass("dark-mode")
 		})
 	</script>
-
 	<% include ./partials/footer.ejs %>
 </body>

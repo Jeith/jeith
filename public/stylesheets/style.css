@@ -622,7 +622,7 @@ body.home {
       color: white;
       font-size: 225px;
       font-weight: 700;
-      text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7); }
+      text-shadow: 0px 0px 10px rgba(231, 58, 42, 0.4); }
 body .about-me {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -658,7 +658,9 @@ body .about-me {
       width: 100%;
       height: 100%; }
   body .about-me span {
-    line-height: 22px; }
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 500; }
     body .about-me span:before {
       content: "";
       width: 100%;
@@ -749,44 +751,25 @@ body .technologies-container {
       animation-direction: false;
       animation-timing-function: linear;
       animation-iteration-count: infinite; }
-    body .technologies-container .technology#sass:hover {
+    body .technologies-container .technology#sass:hover p {
       -webkit-animation-delay: false;
-      -webkit-animation-duration: 0.5s;
-      -webkit-animation-name: rotating;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-name: color-flash;
       -webkit-animation-direction: false;
-      -webkit-animation-timing-function: linear;
+      -webkit-animation-timing-function: ease-in-out;
       -webkit-animation-iteration-count: infinite;
       -moz-animation-delay: false;
-      -moz-animation-duration: 0.5s;
-      -moz-animation-name: rotating;
+      -moz-animation-duration: 1s;
+      -moz-animation-name: color-flash;
       -moz-animation-direction: false;
-      -moz-animation-timing-function: linear;
+      -moz-animation-timing-function: ease-in-out;
       -moz-animation-iteration-count: infinite;
       animation-delay: false;
-      animation-duration: 0.5s;
-      animation-name: rotating;
+      animation-duration: 1s;
+      animation-name: color-flash;
       animation-direction: false;
-      animation-timing-function: linear;
+      animation-timing-function: ease-in-out;
       animation-iteration-count: infinite; }
-      body .technologies-container .technology#sass:hover p {
-        -webkit-animation-delay: false;
-        -webkit-animation-duration: 1s;
-        -webkit-animation-name: color-flash;
-        -webkit-animation-direction: false;
-        -webkit-animation-timing-function: ease-in-out;
-        -webkit-animation-iteration-count: infinite;
-        -moz-animation-delay: false;
-        -moz-animation-duration: 1s;
-        -moz-animation-name: color-flash;
-        -moz-animation-direction: false;
-        -moz-animation-timing-function: ease-in-out;
-        -moz-animation-iteration-count: infinite;
-        animation-delay: false;
-        animation-duration: 1s;
-        animation-name: color-flash;
-        animation-direction: false;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite; }
     body .technologies-container .technology p {
       font-weight: 700;
       color: white;
@@ -1013,8 +996,12 @@ footer {
   body.home .about-me .section-wrapper {
     padding: 30px 20px; }
     body.home .about-me .section-wrapper .img-wrapper:before {
-      top: 5px;
       left: 10px; }
+    body.home .about-me .section-wrapper .img-wrapper:hover:before {
+      top: -10px;
+      left: -10px;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px); }
     body.home .about-me .section-wrapper h2 {
       font-size: 20px;
       margin-left: calc(20px - 2%); }

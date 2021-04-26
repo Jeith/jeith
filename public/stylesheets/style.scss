@@ -685,7 +685,9 @@ body {
         color: white;
         font-size: 225px;
         font-weight:700;
-        text-shadow: 0px 0px 1px rgba(0,0,0,.7);
+        text-shadow: 0px 0px 10px rgba(231,58,42,.4);
+        // text-shadow: 4px 3px 0px #e73a2a, 9px 8px 0px rgba(0, 0, 0, .15);
+        
       }
     }
   }
@@ -714,8 +716,10 @@ body {
       }
     }
     span{
-      line-height: 22px;
-
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 500;
+      
       &:before{
         content: "";
         width: 100%;
@@ -790,8 +794,6 @@ body {
       }
       &#sass{
         &:hover{
-          @include animation(rotating, .5s, $timing-function: linear, $iteration-count: infinite);
-
           p{
             @include animation(color-flash, 1s, $timing-function: ease-in-out, $iteration-count: infinite);
           }
@@ -1109,8 +1111,15 @@ footer {
 
           .img-wrapper{
             &:before{
-              top: 5px;
               left: 10px;
+            }
+            &:hover{
+              &:before{
+                top: -10px;
+                left: -10px;
+                width: calc(100% + 20px);
+                height: calc(100% + 20px);
+              }
             }
           }
 
