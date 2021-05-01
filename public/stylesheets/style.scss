@@ -654,6 +654,7 @@ body {
       @include align-items(center);
       @include transition(all .25s ease-in-out);
       background-color: $mustard-yellow;
+      padding: 15px;
       min-height: 100vh;
       min-width: calc(100vw - 30px);
 
@@ -1189,8 +1190,6 @@ footer {
   body{
     &.home {
       .hero {
-        padding: 48px;
-
         h1{
           font-size: 110px;
           width: 40px;

@@ -587,6 +587,7 @@ body.home {
     -ms-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
     background-color: #F6CA10;
+    padding: 15px;
     min-height: 100vh;
     min-width: calc(100vw - 30px); }
     body.home .hero:after {
@@ -1040,11 +1041,9 @@ footer {
       body .project-section .project.reverse {
         padding-left: 25px; } }
 @media all and (max-width: 400px) {
-  body.home .hero {
-    padding: 48px; }
-    body.home .hero h1 {
-      font-size: 110px;
-      width: 40px; }
+  body.home .hero h1 {
+    font-size: 110px;
+    width: 40px; }
   body.home .about-me .section-wrapper h2 {
     font-size: 20px;
     margin-left: 10px; }
