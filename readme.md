@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/Jeith/jeith/blob/master/public/assets/welcome.gif?raw=true" alt="Welcome" align="center">
+<img src="https://github.com/Jeith/jeith/blob/master/public/assets/readme/welcome.gif?raw=true" alt="Welcome" align="center">
 </div>
 <br />
 
@@ -21,7 +21,7 @@ to my personal GitHub profile!
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<img alt="Globe" height="80" src="https://github.com/Jeith/jeith/blob/master/public/assets/globe.gif?raw=true">
+<img alt="Globe" height="80" src="https://github.com/Jeith/jeith/blob/master/public/assets/readme/globe.gif?raw=true">
 </a>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -39,7 +39,7 @@ to my personal GitHub profile!
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-<img height="100" alt="Guestbook" src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/book.gif"> 
+<img height="100" alt="Guestbook" src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/readme/book.gif"> 
 </a>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -52,7 +52,7 @@ to my personal GitHub profile!
 
 <div align="center">
 <div>
-<img src="https://github.com/Jeith/jeith/blob/master/public/assets/thanks.gif?raw=true" alt="Thanks" align="center">
+<img src="https://github.com/Jeith/jeith/blob/master/public/assets/readme/thanks.gif?raw=true" alt="Thanks" align="center">
 </div>
 <p>for visiting my page!</p>
 </div>
@@ -66,9 +66,7 @@ to my personal GitHub profile!
 <br />
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/notepad.gif" alt="Site created with Notepad" height="30" />
+<img src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/readme/notepad.gif" alt="Site created with Notepad" height="30" />
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>  
-<img src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/ie_logo.gif" alt="Microsoft Internet Explorer" />
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>  
-<img src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/noframes.gif" alt="Microsoft Internet Explorer" />
+<img src="https://raw.githubusercontent.com/Jeith/jeith/master/public/assets/readme/ie_logo.gif" alt="Microsoft Internet Explorer" />
 </div>

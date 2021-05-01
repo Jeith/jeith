@@ -672,27 +672,36 @@ body {
       }
 
       h1{
+        @include transition(all .4s ease-in-out);
         @include user-select(none);
         cursor: default;
         text-align: center;
-        color: white;
+        color: $mustard-yellow;
         font-size: 225px;
         font-weight:700;
         text-shadow: 0px 0px 10px rgba(231,58,42,.4);
-        // text-shadow: 4px 3px 0px #e73a2a, 9px 8px 0px rgba(0, 0, 0, .15);
+        padding: 0 10px;
+        width: 70px;
+        overflow: hidden;
         
+        &.reveal{
+          color: white;
+          width: 100%;
+        }
       }
     }
   }
   .about-me{
+    @include display-flex;
+    @include justify-content(center);
     @include transition(all .25s ease-in-out);
-    background-color: #F6CA10;
+    background-color: $mustard-yellow;
 
     .section-wrapper{
       @include display-flex;
-      @include flex-direction(row);
       @include justify-content(space-between);
       @include flex-wrap(wrap);
+      max-width: 1700px;
       background-color: $orange;
       border-top: none;
       padding: 60px;
@@ -818,18 +827,24 @@ body {
   }
   .project-section{
     @include display-flex;
-    @include flex-direction(column);
     @include justify-content(center);
-    @include align-items(center);
     @include box-shadow(-1px 0px 9px -1px rgba(232, 58, 42, .5));
     padding: 60px 110px 110px;
     background-color: $orange;
+
+    .section-wrapper{
+      @include display-flex;
+      @include flex-direction(column);
+      @include align-items(center);
+      max-width: 1700px;
+    }
 
     h2{
       width: 127px;
 
       &:before{
-        left: -8%;
+        left: -17px;
+        padding: 0 10px;
         width: 116%;
       }
     }
@@ -961,6 +976,17 @@ footer {
 }
 
 
+@media all and (min-width: 1920px) {
+  body{
+    &.home {
+      .hero {
+        h1{
+          font-size: 500px;
+        }
+      }
+    }
+  }
+}
 @media all and (max-width: 1279px) {
 }
 @media all and (max-width: 1139px) {
@@ -971,6 +997,7 @@ footer {
       .hero {
         h1{
           font-size: 175px;
+          width: 55px;
         }
       }
     }
@@ -998,7 +1025,7 @@ footer {
           width: 100%;
         }
         .img-wrapper{
-          width: 35%;
+          display: none;
         }
       }
     }
@@ -1084,6 +1111,7 @@ footer {
       .hero {
         h1{
           font-size: 130px;
+          width: 44px;
         }
       }
       .project-section{
@@ -1165,6 +1193,7 @@ footer {
 
         h1{
           font-size: 110px;
+          width: 40px;
         }
       }
       .about-me{
