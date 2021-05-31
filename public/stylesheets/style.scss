@@ -636,12 +636,10 @@ body {
               background-color: black;
             }
           }
-          &:first-of-type{
-            .text{
+          .text{
+            #jeith{
               h3{
-                &:first-of-type{
-                  color: $blue;
-                }
+                color: $blue;
               }
             }
           }
