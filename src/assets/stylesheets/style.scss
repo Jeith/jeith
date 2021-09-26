@@ -928,6 +928,12 @@ body {
           margin-bottom: 15px;
           cursor: pointer;
         }
+        #jeith {
+          display: block;
+          margin-bottom: 15px;
+          cursor: pointer;
+          background: transparent;
+        }
         span{
           margin-top: 15px;
           display: inline;
@@ -944,10 +950,6 @@ body {
       }
       .technologies-container{
         padding-top: 15px;
-
-        div{
-          
-        }
       }
     }
   }

@@ -900,6 +900,11 @@ body .project-section {
         display: block;
         margin-bottom: 15px;
         cursor: pointer; }
+      body .project-section .project .text #jeith {
+        display: block;
+        margin-bottom: 15px;
+        cursor: pointer;
+        background: transparent; }
       body .project-section .project .text span {
         margin-top: 15px;
         display: inline;
