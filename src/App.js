@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './assets/stylesheets/style.css';
 import aboutPlaceholder from './assets/images/about-placeholder.jpeg';
 import pennystreams from './assets/images/projects/pennystreams.png';
-import jeith from './assets/images/projects/pennystreams.png';
+import jeith from './assets/images/projects/jeith.png';
 import paletteCenter from './assets/images/projects/the-palette-center.png';
 import snowhouse from './assets/images/projects/snowhouse.png';
 import tofuVillage from './assets/images/projects/tofu-village.png';
