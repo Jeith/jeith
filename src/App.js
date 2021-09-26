@@ -26,6 +26,10 @@ function App() {
     }
   }
 
+  const scrollToTop = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'})
+  }
+
   return (
     <React.Fragment>
       <section className="hero">
@@ -331,7 +335,7 @@ function App() {
         </div>
       </section>
 
-      <footer>
+      <footer onClick={() => scrollToTop()}>
         <i className="fas fa-arrow-up"></i>
         <h4>Back to top</h4>
       </footer>
