@@ -228,7 +228,7 @@ function App() {
             </div>
 
             <div className="text">
-              <a rel="noreferrer" href="https://palettecenter.herokuapp.com/" target="_blank">
+              <a rel="noreferrer" href="https://palette-generator.pages.dev/" target="_blank">
                 <h3>thepalettecenter.com</h3>
               </a>
               <span>The Palette Center is a project that I created in 2018. This web application is built with React and Redux and can be used to randomly generated different color palettes.</span>
