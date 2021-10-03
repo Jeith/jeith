@@ -79,7 +79,7 @@ function App() {
           <div className="textbox">
             <div>
               <h2>Hi, my name is Keith!</h2>
-              <span>I'm a full stack software developer from Houston, TX. I've been coding for over 3 years, and I'm most proficient in web & mobile app development. I first started as a hobbyist developer by learning how to code on my own through <a rel="noreferrer" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> and <a rel="noreferrer" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> in early 2018. Later on that year, I attended <a rel="noreferrer" href="https://www.digitalcrafts.com/" target="_blank">DigitalCrafts</a> where I learned how to build full stack web applications. I've been working professionally as a software engineer since attending coding bootcamp, and I use Flutter, React, and various other technologies to build web and mobile applications.<br/></span>
+              <span>I'm a full stack software developer from Houston, TX. I've been coding for over 3 years, and I'm most proficient in web & mobile app development. I first started as a hobbyist developer by learning how to code on my own through <a rel="noreferrer" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> and <a rel="noreferrer" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> in early 2018. Later on that year, I attended <a rel="noreferrer" href="https://www.digitalcrafts.com/" target="_blank">DigitalCrafts</a> where I learned how to build full stack web applications. I've been working professionally as a software engineer since attending coding bootcamp, and I use React, Flutter, and various other technologies to build web and mobile applications.<br/></span>
             </div>
       
             <div className="technologies">
@@ -209,7 +209,7 @@ function App() {
                   <p>Technologies Used:</p>
                 </div>
                 <div className="technology">
-                  <p className="teal">Node.js</p>
+                  <p className="teal">React</p>
                 </div>
                 <div className="technology">
                   <p className="orange">HTML5</p>
