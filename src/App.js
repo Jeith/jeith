@@ -4,8 +4,8 @@ import aboutPlaceholder from './assets/images/about-placeholder.jpeg';
 import pennystreams from './assets/images/projects/pennystreams.png';
 import jeith from './assets/images/projects/jeith.png';
 import paletteCenter from './assets/images/projects/the-palette-center.png';
-import snowhouse from './assets/images/projects/snowhouse.png';
-import tofuVillage from './assets/images/projects/tofu-village.png';
+// import snowhouse from './assets/images/projects/snowhouse.png';
+// import tofuVillage from './assets/images/projects/tofu-village.png';
 import heroRPG from './assets/images/projects/hero-rpg.png';
 
 function App() {
@@ -79,7 +79,7 @@ function App() {
           <div className="textbox">
             <div>
               <h2>Hi, my name is Keith!</h2>
-              <span>I'm a full stack software developer from Houston, TX. I've been coding for over 3 years, and I'm most proficient in web & mobile app development. I first started as a hobbyist developer by learning how to code on my own through <a rel="noreferrer" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> and <a rel="noreferrer" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> in early 2018. Later on that year, I attended <a rel="noreferrer" href="https://www.digitalcrafts.com/" target="_blank">DigitalCrafts</a> where I learned how to build full stack web applications. I've been working professionally as a software engineer since attending coding bootcamp, and I use React, Flutter, and various other technologies to build web and mobile applications.<br/></span>
+              <span>I'm a full stack software developer from Houston, TX. I've been coding for over 3 years, and I'm most proficient in web &amp; mobile app development. I first started as a hobbyist developer by learning how to code on my own through <a rel="noreferrer" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> and <a rel="noreferrer" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> in early 2018. Later on that year, I attended <a rel="noreferrer" href="https://www.digitalcrafts.com/" target="_blank">DigitalCrafts</a> where I learned how to build full stack web applications. I've been working professionally as a software engineer since attending coding bootcamp, and I use React, Flutter, and various other technologies to build web and mobile applications.<br/></span>
             </div>
       
             <div className="technologies">
@@ -203,7 +203,7 @@ function App() {
               <span onClick={() => toggleDarkMode()} id="jeith">
                 <h3>jeith.com</h3>
               </span>
-              <span>I started working on this website in early 2021 so that I could have a way to showcase my some of my projects. This node application is a PWA and was styled with custom SCSS.</span>
+              <span>This PWA is my latest portfolio that I built in 2021. This website is built with React and hosted via Cloudflare Pages.</span>
               <div className="technologies-container">
                 <div className="technology">
                   <p>Technologies Used:</p>
@@ -231,7 +231,7 @@ function App() {
               <a rel="noreferrer" href="https://palette-generator.pages.dev/" target="_blank">
                 <h3>thepalettecenter.com</h3>
               </a>
-              <span>The Palette Center is a project that I created in 2018. This web application is built with React and Redux and can be used to randomly generated different color palettes.</span>
+              <span>The Palette Center is a project that I created in 2018. This web application is built with React and Redux and can be used to generate color palettes.</span>
               <div className="technologies-container">
                 <div className="technology">
                   <p>Technologies Used:</p>
@@ -254,7 +254,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="project reverse">
+          {/* <div className="project reverse">
             <div className="image-container">
               <div className="image-wrapper">
                 <img src={snowhouse} alt="Full sized screenshot of the text-based Hero RPG. The game is running in a terminal with a black background and white text." />
@@ -309,7 +309,7 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="project reverse">
             <div className="image-container">
               <div className="image-wrapper">

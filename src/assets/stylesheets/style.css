@@ -944,7 +944,7 @@ footer {
 
 @media all and (min-width: 1920px) {
   body.home .hero h1 {
-    font-size: 500px; } }
+    font-size: 300px; } }
 @media all and (max-width: 1139px) {
   body.home .about-me .section-wrapper h2 {
     font-size: 26px; }
