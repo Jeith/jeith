@@ -140,15 +140,6 @@ function App() {
                 <div className="technology">
                   <p>AWS</p>
                 </div>
-                <div className="technology">
-                  <p>Cloudflare</p>
-                </div>
-                <div className="technology">
-                  <p>Responsive web design</p>
-                </div>
-                <div className="technology">
-                  <p>RESTful API design</p>
-                </div>
               </div>
             </div>
           </div>
