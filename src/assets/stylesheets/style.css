@@ -651,7 +651,7 @@ body .about-me {
     max-width: 1700px;
     background-color: #FC8300;
     border-top: none;
-    padding: 60px; }
+    padding: 60px 60px 50px 60px; }
     body .about-me .section-wrapper:after {
       content: "";
       box-shadow: -1px 0px 9px -1px rgba(232, 58, 42, 0.5);
@@ -965,7 +965,6 @@ footer {
     body.home .about-me .section-wrapper h2 {
       font-size: 26px; }
     body.home .about-me .section-wrapper .technologies {
-      padding-bottom: 40px;
       padding-top: 30px; }
       body.home .about-me .section-wrapper .technologies h2 {
         font-size: 26px; }
@@ -1022,7 +1021,7 @@ footer {
   body.home .project-section .image-container {
     height: 42vw; }
   body.home .about-me .section-wrapper {
-    padding: 30px 20px; }
+    padding: 25px 15px 15px; }
     body.home .about-me .section-wrapper .img-wrapper:before {
       left: 10px; }
     body.home .about-me .section-wrapper .img-wrapper:hover:before {
@@ -1034,8 +1033,7 @@ footer {
       font-size: 20px;
       margin-left: calc(20px - 2%); }
     body.home .about-me .section-wrapper .technologies {
-      padding-top: 20px;
-      padding-bottom: 20px; }
+      padding-top: 20px; }
       body.home .about-me .section-wrapper .technologies h2 {
         font-size: 20px; }
       body.home .about-me .section-wrapper .technologies p {
@@ -1061,12 +1059,21 @@ footer {
     margin-left: 10px; }
   body.home .about-me .section-wrapper p {
     font-size: 14px; }
+  body.home .about-me .section-wrapper span {
+    font-size: 15px;
+    line-height: 23px; }
   body.home .about-me .section-wrapper .technologies .technology {
     margin: 0px 11px 9px 0; }
   body.home .about-me .section-wrapper .technologies h2 {
     font-size: 16px;
     margin-left: 10px; }
   body.home .about-me .section-wrapper .technologies p {
-    font-size: 14px; } }
+    font-size: 14px; }
+  body.home .project-section .project .text span {
+    font-size: 15px; }
+  body.home .technologies-container .technology p {
+    font-size: 14px; }
+    body.home .technologies-container .technology p.technology-heading {
+      font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -703,7 +703,7 @@ body {
       max-width: 1700px;
       background-color: $orange;
       border-top: none;
-      padding: 60px;
+      padding: 60px 60px 50px 60px;
 
       &:after{
         content: "";
@@ -1034,7 +1034,6 @@ footer {
           }
           
           .technologies{
-            padding-bottom: 40px;
             padding-top: 30px;
 
             h2{
@@ -1150,7 +1149,7 @@ footer {
       }
       .about-me{
         .section-wrapper{
-          padding: 30px 20px;
+          padding: 25px 15px 15px;
 
           .img-wrapper{
             &:before{
@@ -1172,7 +1171,6 @@ footer {
           }
           .technologies{
             padding-top: 20px;
-            padding-bottom: 20px;
 
             h2{
               font-size: 20px;
@@ -1226,6 +1224,12 @@ footer {
           p{
             font-size: 14px;
           }
+
+          span {
+            font-size: 15px;
+            line-height: 23px;
+          }
+
           .technologies{
             .technology{
               margin: 0px 11px 9px 0;
@@ -1236,6 +1240,26 @@ footer {
             }
             p{
               font-size: 14px;
+            }
+          }
+        }
+      }
+      .project-section {
+        .project {
+          .text {
+            span {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .technologies-container {
+        .technology {
+          p {
+            font-size: 14px;
+
+            &.technology-heading {
+              font-size: 16px;
             }
           }
         }

@@ -79,7 +79,7 @@ function App() {
           <div className="textbox">
             <div>
               <h2>Hi, my name is Keith!</h2>
-              <span>I'm a full stack software developer from Houston, TX. I've been coding for over 3 years, and I'm most proficient in web &amp; mobile app development. I first started as a hobbyist developer by learning how to code on my own through <a rel="noreferrer" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> and <a rel="noreferrer" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> in early 2018. Later on that year, I attended <a rel="noreferrer" href="https://www.digitalcrafts.com/" target="_blank">DigitalCrafts</a> where I learned how to build full stack web applications. I've been working professionally as a software engineer since attending coding bootcamp, and I use React, Flutter, and various other technologies to build web and mobile applications.<br/></span>
+              <span>I'm a full stack software developer living in Austin, TX. I've been programming for around 3 years, and I'm most proficient in web &amp; mobile app development. I first started as a hobbyist developer by learning how to code on my own through <a rel="noreferrer" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> and <a rel="noreferrer" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> in early 2018. Later on that year, I attended a coding bootcamp where I learned how to build full stack web applications. I've been working professionally as a software engineer since attending coding bootcamp, and I use React, Flutter, and various other technologies to build web and mobile applications.<br/></span>
             </div>
       
             <div className="technologies">
@@ -105,19 +105,13 @@ function App() {
                   <p>Redux</p>
                 </div>
                 <div className="technology">
-                  <p>React Native</p>
-                </div>
-                <div className="technology">
-                  <p>Dart</p>
-                </div>
-                <div className="technology">
                   <p>Node.js</p>
                 </div>
                 <div className="technology">
                   <p>HTML5</p>
                 </div>
                 <div className="technology" id="sass">
-                  <p>Sass/SCSS</p>
+                  <p>Sass</p>
                 </div>
                 <div className="technology" id="css">
                   <p>CSS3</p>
@@ -144,7 +138,7 @@ function App() {
             </div>
           </div>
           <div className="img-wrapper">
-            <img src={aboutPlaceholder} alt="Photograph of a Macintosh Plus computer." />
+            <img src={aboutPlaceholder} alt="Macintosh computer" />
           </div>
         </div>
       </section>
@@ -163,10 +157,10 @@ function App() {
               <a href="https://pennystreams.com" rel="noreferrer" target="_blank">
                 <h3>pennystreams.com</h3>
               </a>
-              <span>Pennystreams is latest project that I've been working on. Pennystreams uses different APIs to get artists' Spotify playcount and calculate artists' spotify payouts based off of it.</span>
+              <span>Pennystreams is latest project that I've built. Pennystreams uses APIs to get artists' Spotify playcount and calculate artists' Spotify payouts based off of it.</span>
               <div className="technologies-container">
                 <div className="technology">
-                  <p>Technologies Used:</p>
+                  <p class="technology-heading">Technologies Used:</p>
                 </div>
                 <div className="technology">
                   <p className="teal">Node.js</p>
@@ -197,7 +191,7 @@ function App() {
               <span>This PWA is my latest portfolio that I built in 2021. This website is built with React and hosted via Cloudflare Pages.</span>
               <div className="technologies-container">
                 <div className="technology">
-                  <p>Technologies Used:</p>
+                  <p class="technology-heading">Technologies Used:</p>
                 </div>
                 <div className="technology">
                   <p className="teal">React</p>
@@ -214,7 +208,7 @@ function App() {
           <div className="project">
             <div className="image-container">
               <div className="image-wrapper">
-                <img src={paletteCenter} alt="Full sized screenshot of the Palette Center website. The website contains 20 randomly generated color palettes centered on the page with the title of the site at the top." />
+                <img src={paletteCenter} alt="Full sized screenshot of the Palette Center website." />
               </div>
             </div>
 
@@ -225,7 +219,7 @@ function App() {
               <span>The Palette Center is a project that I created in 2018. This web application is built with React and Redux and can be used to generate color palettes.</span>
               <div className="technologies-container">
                 <div className="technology">
-                  <p>Technologies Used:</p>
+                  <p class="technology-heading">Technologies Used:</p>
                 </div>
                 <div className="technology">
                   <p className="teal">React</p>
@@ -259,7 +253,7 @@ function App() {
               <span>This is a website I built for a cafe in Pasadena, TX. I built this in 2018 when I was learning more about front-end development.</span>
               <div className="technologies-container">
                 <div className="technology">
-                  <p>Technologies Used:</p>
+                  <p class="technology-heading">Technologies Used:</p>
                 </div>
                 <div className="technology">
                   <p className="teal">Node.js</p>
@@ -287,7 +281,7 @@ function App() {
               <span>This is a website I built for a restaurant in Houston, TX. I built this in 2018 when I was learning CSS3 and Bootstrap.</span>
               <div className="technologies-container">
                 <div className="technology">
-                  <p>Technologies Used:</p>
+                  <p class="technology-heading">Technologies Used:</p>
                 </div>
                 <div className="technology">
                   <p className="teal">JavaScript</p>
@@ -304,7 +298,7 @@ function App() {
           <div className="project reverse">
             <div className="image-container">
               <div className="image-wrapper">
-                <img src={heroRPG} alt="Full sized screenshot of the text-based Hero RPG. The game is running in a terminal with a black background and white text." />
+                <img src={heroRPG} alt="Full sized screenshot of the text-based Hero RPG." />
               </div>
             </div>
 
@@ -312,10 +306,10 @@ function App() {
               <a rel="noreferrer" href="https://github.com/Jeith/Basic-Hero-RPG" target="_blank">
                 <h3>Text-based Hero RPG</h3>
               </a>
-              <span>This text-based hero RPG is a game that I created when I was learning Python 3 in 2018. This game allows players to fight different ASCII art creatures that drop coins, and the player can use these coins to purchase items. Users can play this game by running the <a rel="noreferrer" href="https://github.com/Jeith/Basic-Hero-RPG/blob/master/hero-rpg.py" target="_blank">hero-rpg.py</a> file through their Python compiler.</span>
+              <span>I built this text-based hero RPG when I was learning Python in 2018. This game allows players to fight different ASCII art creatures that drop coins, and the player can use these coins to purchase items. Users can play this game by running the <a rel="noreferrer" href="https://github.com/Jeith/Basic-Hero-RPG/blob/master/hero-rpg.py" target="_blank">hero-rpg.py</a> file through their Python compiler.</span>
               <div className="technologies-container">
                 <div className="technology">
-                  <p>Technologies Used:</p>
+                  <p class="technology-heading">Technologies Used:</p>
                 </div>
                 <div className="technology">
                   <p className="teal">Python</p>
