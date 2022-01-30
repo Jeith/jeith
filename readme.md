@@ -12,7 +12,6 @@ to my personal GitHub profile!
 <table width="100%">
 <tr>
 <td align="center">
-<br />
 <a href="https://jeith.com">
 <strong>Visit my personal website </strong>
 <br />
@@ -32,6 +31,7 @@ to my personal GitHub profile!
 </td>
 
 <td align="center">
+<br />
 <a href="https://github.com/Jeith/jeith/issues">
 <strong>Sign my guest book</strong>
 <br />
