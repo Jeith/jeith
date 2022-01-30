@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './assets/stylesheets/style.css';
-import aboutPlaceholder from './assets/images/about-placeholder.jpeg';
+import mii from './assets/images/mii.jpg';
 import pennystreams from './assets/images/projects/pennystreams.png';
 import jeith from './assets/images/projects/jeith.png';
 import paletteCenter from './assets/images/projects/the-palette-center.png';
@@ -138,7 +138,7 @@ function App() {
             </div>
           </div>
           <div className="img-wrapper">
-            <img src={aboutPlaceholder} alt="Macintosh computer" />
+            <img src={mii} alt="Macintosh computer" />
           </div>
         </div>
       </section>
