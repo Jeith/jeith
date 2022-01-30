@@ -1028,7 +1028,9 @@ footer {
         .section-wrapper{
           @include align-items(center);
           @include justify-content(center);
-
+          @include flex-direction(column-reverse);
+          padding: 35px 35px 25px 35px;
+          
           h2{
             font-size: 26px;
           }
@@ -1046,7 +1048,16 @@ footer {
           width: 100%;
         }
         .img-wrapper{
-          display: none;
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+          border-radius: 50%;
+          margin-bottom: 30px;
+
+          img {
+            width: calc(100% + 50px);
+            left: -24px;
+          }
         }
       }
     }
@@ -1091,6 +1102,14 @@ footer {
       .about-me{
         .section-wrapper{
           padding: 40px;
+
+          .technologies {
+            width: calc(100% + 29px);
+            
+            h2 {
+              font-size: 25px;
+            }
+          }
         }
       }
     }
@@ -1104,6 +1123,14 @@ footer {
         .section-wrapper{
           h2{
             font-size: 27px;
+          }
+        }
+        .img-wrapper {
+          width: 125px;
+          height: 125px;
+
+          img {
+            top: -6px;
           }
         }
       }
@@ -1122,12 +1149,6 @@ footer {
         display: none;
       }
     }
-    // .square{
-    //   &#square-1{
-    //     right: 25%;
-    //     bottom: 24%;
-    //   }
-    // }
     &.home {
       .hero {
         h1{
@@ -1171,6 +1192,8 @@ footer {
           }
           .technologies{
             padding-top: 20px;
+            width: 100%;
+
 
             h2{
               font-size: 20px;
@@ -1179,10 +1202,6 @@ footer {
               font-size: 15px;
             }
           }
-        }
-
-        .img-wrapper{
-          width: 100%;
         }
       }
     }
@@ -1216,6 +1235,7 @@ footer {
       }
       .about-me{
         .section-wrapper{
+          padding: 20px 15px 11px;
           h2{
             font-size: 20px;
             margin-left: 10px;
@@ -1241,6 +1261,17 @@ footer {
             p{
               font-size: 14px;
             }
+          }
+        }
+        .img-wrapper {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 20px;
+
+          img {
+            width: calc(100% + 35px);
+            left: -18px;
+            top: -6px;
           }
         }
       }

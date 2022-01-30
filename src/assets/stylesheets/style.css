@@ -961,7 +961,12 @@ footer {
     -ms-align-items: center;
     align-items: center;
     -webkit-justify-content: center;
-    justify-content: center; }
+    justify-content: center;
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    padding: 35px 35px 25px 35px; }
     body.home .about-me .section-wrapper h2 {
       font-size: 26px; }
     body.home .about-me .section-wrapper .technologies {
@@ -971,7 +976,14 @@ footer {
   body.home .about-me .textbox {
     width: 100%; }
   body.home .about-me .img-wrapper {
-    display: none; }
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 30px; }
+    body.home .about-me .img-wrapper img {
+      width: calc(100% + 50px);
+      left: -24px; }
   body .project-section {
     padding: 60px; }
     body .project-section .project {
@@ -1000,12 +1012,21 @@ footer {
   body.home .project-section .image-container {
     height: 37vw; }
   body.home .about-me .section-wrapper {
-    padding: 40px; } }
+    padding: 40px; }
+    body.home .about-me .section-wrapper .technologies {
+      width: calc(100% + 29px); }
+      body.home .about-me .section-wrapper .technologies h2 {
+        font-size: 25px; } }
 @media all and (max-width: 639px) {
   body.home .about-me {
     padding: 20px; }
     body.home .about-me .section-wrapper h2 {
       font-size: 27px; }
+    body.home .about-me .img-wrapper {
+      width: 125px;
+      height: 125px; }
+      body.home .about-me .img-wrapper img {
+        top: -6px; }
   body.home .project-section .image-container {
     height: 34vw; } }
 @media all and (max-width: 500px) {
@@ -1033,13 +1054,12 @@ footer {
       font-size: 20px;
       margin-left: calc(20px - 2%); }
     body.home .about-me .section-wrapper .technologies {
-      padding-top: 20px; }
+      padding-top: 20px;
+      width: 100%; }
       body.home .about-me .section-wrapper .technologies h2 {
         font-size: 20px; }
       body.home .about-me .section-wrapper .technologies p {
         font-size: 15px; }
-  body.home .about-me .img-wrapper {
-    width: 100%; }
   body .project-section {
     padding: 25px;
     padding-top: 60px;
@@ -1054,21 +1074,31 @@ footer {
   body.home .hero h1 {
     font-size: 110px;
     width: 40px; }
-  body.home .about-me .section-wrapper h2 {
-    font-size: 20px;
-    margin-left: 10px; }
-  body.home .about-me .section-wrapper p {
-    font-size: 14px; }
-  body.home .about-me .section-wrapper span {
-    font-size: 15px;
-    line-height: 23px; }
-  body.home .about-me .section-wrapper .technologies .technology {
-    margin: 0px 11px 9px 0; }
-  body.home .about-me .section-wrapper .technologies h2 {
-    font-size: 16px;
-    margin-left: 10px; }
-  body.home .about-me .section-wrapper .technologies p {
-    font-size: 14px; }
+  body.home .about-me .section-wrapper {
+    padding: 20px 15px 11px; }
+    body.home .about-me .section-wrapper h2 {
+      font-size: 20px;
+      margin-left: 10px; }
+    body.home .about-me .section-wrapper p {
+      font-size: 14px; }
+    body.home .about-me .section-wrapper span {
+      font-size: 15px;
+      line-height: 23px; }
+    body.home .about-me .section-wrapper .technologies .technology {
+      margin: 0px 11px 9px 0; }
+    body.home .about-me .section-wrapper .technologies h2 {
+      font-size: 16px;
+      margin-left: 10px; }
+    body.home .about-me .section-wrapper .technologies p {
+      font-size: 14px; }
+  body.home .about-me .img-wrapper {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px; }
+    body.home .about-me .img-wrapper img {
+      width: calc(100% + 35px);
+      left: -18px;
+      top: -6px; }
   body.home .project-section .project .text span {
     font-size: 15px; }
   body.home .technologies-container .technology p {

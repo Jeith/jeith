@@ -4,8 +4,6 @@ import mii from './assets/images/mii.jpg';
 import pennystreams from './assets/images/projects/pennystreams.png';
 import jeith from './assets/images/projects/jeith.png';
 import paletteCenter from './assets/images/projects/the-palette-center.png';
-// import snowhouse from './assets/images/projects/snowhouse.png';
-// import tofuVillage from './assets/images/projects/tofu-village.png';
 import heroRPG from './assets/images/projects/hero-rpg.png';
 
 function App() {
@@ -149,7 +147,7 @@ function App() {
           <div className="project first">
             <div className="image-container">
               <div className="image-wrapper">
-                <img src={pennystreams} alt="This is a full size screenshot the Pennystreams website." />
+                <img src={pennystreams} alt="Pennystreams screenshot" />
               </div>
             </div>
 
@@ -180,7 +178,7 @@ function App() {
           <div className="project reverse">
             <div className="image-container">
               <div className="image-wrapper">
-                <img src={jeith} alt="This is a full size screenshot of the site your on!" />
+                <img src={jeith} alt="This is a screenshot of the site your on!" />
               </div>
             </div>
 
@@ -208,7 +206,7 @@ function App() {
           <div className="project">
             <div className="image-container">
               <div className="image-wrapper">
-                <img src={paletteCenter} alt="Full sized screenshot of the Palette Center website." />
+                <img src={paletteCenter} alt="Screenshot of the Palette Center" />
               </div>
             </div>
 
@@ -239,66 +237,10 @@ function App() {
               </div>
             </div>
           </div>
-          {/* <div className="project reverse">
-            <div className="image-container">
-              <div className="image-wrapper">
-                <img src={snowhouse} alt="Full sized screenshot of the text-based Hero RPG. The game is running in a terminal with a black background and white text." />
-              </div>
-            </div>
-
-            <div className="text">
-              <a rel="noreferrer" href="https://snowhouse.herokuapp.com/" target="_blank">
-                <h3>Snowhouse Website</h3>
-              </a>
-              <span>This is a website I built for a cafe in Pasadena, TX. I built this in 2018 when I was learning more about front-end development.</span>
-              <div className="technologies-container">
-                <div className="technology">
-                  <p class="technology-heading">Technologies Used:</p>
-                </div>
-                <div className="technology">
-                  <p className="teal">Node.js</p>
-                </div>
-                <div className="technology">
-                  <p className="orange">HTML5</p>
-                </div>
-                <div className="technology">
-                  <p className="yellow">CSS3</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="project">
-            <div className="image-container">
-              <div className="image-wrapper" style={{overflowY: 'hidden'}}>
-                <img src={tofuVillage} alt="Full sized screenshot of the text-based Hero RPG. The game is running in a terminal with a black background and white text." />
-              </div>
-            </div>
-
-            <div className="text">
-              <a rel="noreferrer" href="https://tofu-village.herokuapp.com/index.html" target="_blank">
-                <h3>Tofu Village Website</h3>
-              </a>
-              <span>This is a website I built for a restaurant in Houston, TX. I built this in 2018 when I was learning CSS3 and Bootstrap.</span>
-              <div className="technologies-container">
-                <div className="technology">
-                  <p class="technology-heading">Technologies Used:</p>
-                </div>
-                <div className="technology">
-                  <p className="teal">JavaScript</p>
-                </div>
-                <div className="technology">
-                  <p className="orange">HTML5</p>
-                </div>
-                <div className="technology">
-                  <p className="yellow">CSS3</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
           <div className="project reverse">
             <div className="image-container">
               <div className="image-wrapper">
-                <img src={heroRPG} alt="Full sized screenshot of the text-based Hero RPG." />
+                <img src={heroRPG} alt="Screenshot of the text-based Hero RPG" />
               </div>
             </div>
 

@@ -12,6 +12,7 @@ to my personal GitHub profile!
 <table width="100%">
 <tr>
 <td align="center">
+<br />
 <a href="https://jeith.com">
 <strong>Visit my personal website </strong>
 <br />
