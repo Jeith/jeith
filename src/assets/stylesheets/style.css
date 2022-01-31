@@ -252,18 +252,11 @@ body .square {
     animation-direction: false;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    cursor: pointer;
     background-color: #E73A2A;
     transform: rotate(-3deg);
     position: absolute;
     right: 35%;
     bottom: 20%; }
-    body .square#square-1:hover {
-      border-radius: 50px;
-      height: 85px;
-      width: 85px;
-      right: 34%;
-      bottom: 19%; }
   body .square#square-2 {
     -webkit-animation-delay: false;
     -webkit-animation-duration: 10s;
@@ -531,8 +524,6 @@ body.home {
     overflow-x: hidden; }
     body.home.loaded .hero:after {
       opacity: 0; }
-  body.home.dark-mode .square#square-1 {
-    background-color: #F6CA10; }
   body.home.dark-mode .square#square-3 {
     background-color: #355CB0; }
   body.home.dark-mode .square#square-7 {
@@ -540,8 +531,6 @@ body.home {
   body.home.dark-mode .square#square-8 {
     background-color: #355CB0; }
   body.home.dark-mode .rectangle#rectangle-1 {
-    background-color: #355CB0; }
-  body.home.dark-mode .rectangle#rectangle-2 {
     background-color: #355CB0; }
   body.home.dark-mode .rectangle#rectangle-4 {
     background-color: #355CB0; }
@@ -684,7 +673,8 @@ body .about-me {
   body .about-me .img-wrapper {
     width: 25%;
     height: fit-content;
-    block-size: fit-content; }
+    block-size: fit-content;
+    cursor: pointer; }
     body .about-me .img-wrapper:before {
       content: "";
       -webkit-transition: all 0.25s ease-in-out;
@@ -896,6 +886,7 @@ body .project-section {
         padding: 5px 13px;
         border-radius: 90px 100px 35px 80px; }
       body .project-section .project .text a {
+        text-decoration: none;
         width: 100%;
         display: block;
         margin-bottom: 15px;

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './assets/stylesheets/style.css';
 import mii from './assets/images/mii.jpg';
+import miiBlinking from './assets/images/mii-blinking.png';
 import pennystreams from './assets/images/projects/pennystreams.png';
 import jeith from './assets/images/projects/jeith.png';
 import paletteCenter from './assets/images/projects/the-palette-center.png';
@@ -8,6 +9,7 @@ import heroRPG from './assets/images/projects/hero-rpg.png';
 
 function App() {
   let [h1Classname, setH1Classname] = useState("");
+  let [isBlinking, setIsBlinking] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,9 +20,11 @@ function App() {
   const toggleDarkMode = () => {
     if (document.body.classList.contains("dark-mode")) {
       document.body.classList.remove("dark-mode");
+      setIsBlinking(false)
 
     } else {
       document.body.classList.add("dark-mode");
+      setIsBlinking(true)
     }
   }
 
@@ -37,7 +41,7 @@ function App() {
           <div className="rectangle curved" id="rectangle-3"></div>
           <div className="rectangle curved" id="rectangle-4"></div>
           <div className="rectangle curved" id="rectangle-5"></div>
-          <div className="square curved" id="square-1" onClick={() => toggleDarkMode()}></div>
+          <div className="square curved" id="square-1"></div>
           <div className="square curved" id="square-2"></div>
           <div className="square curved" id="square-3"></div>
           <div className="square curved" id="square-4"></div>
@@ -136,7 +140,11 @@ function App() {
             </div>
           </div>
           <div className="img-wrapper">
-            <img src={mii} alt="Macintosh computer" />
+            {
+              isBlinking ? 
+                <img src={miiBlinking} alt="Mii blinking" onClick={() => toggleDarkMode()} /> : 
+                <img src={mii} alt="Mii" onClick={() => toggleDarkMode()} />
+            }
           </div>
         </div>
       </section>
