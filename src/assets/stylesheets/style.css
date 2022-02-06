@@ -559,8 +559,6 @@ body.home {
       border-color: black; }
       body.home.dark-mode .project-section .project .image-container:before {
         background-color: black; }
-      body.home.dark-mode .project-section .project .text #jeith h3 {
-        color: #355CB0; }
   body.home .hero {
     display: -webkit-flex;
     display: flex;
