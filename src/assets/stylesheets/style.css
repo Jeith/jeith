@@ -801,7 +801,8 @@ body .project-section {
     align-items: center;
     max-width: 1700px; }
   body .project-section h2 {
-    width: 127px; }
+    width: 127px;
+    margin-left: -10px; }
     body .project-section h2:before {
       left: -17px;
       padding: 0 10px;

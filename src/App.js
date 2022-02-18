@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './assets/stylesheets/style.css';
-import mii from './assets/images/mii.jpg';
+import mii from './assets/images/mii.png';
 import miiBlinking from './assets/images/mii-blinking.png';
 import pennystreams from './assets/images/projects/pennystreams.png';
 import jeith from './assets/images/projects/jeith.png';
