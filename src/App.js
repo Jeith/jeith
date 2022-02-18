@@ -89,13 +89,10 @@ function App() {
       
               <div className="technologies-container">
                 <div className="technology">
-                  <p>JavaScript</p>
-                </div>
-                <div className="technology">
                   <p>Flutter</p>
                 </div>
                 <div className="technology">
-                  <p>Python</p>
+                  <p>JavaScript</p>
                 </div>
                 <div className="technology">
                   <p>React</p>
@@ -110,6 +107,9 @@ function App() {
                   <p>Node.js</p>
                 </div>
                 <div className="technology">
+                  <p>Python</p>
+                </div>
+                <div className="technology">
                   <p>HTML5</p>
                 </div>
                 <div className="technology" id="sass">
@@ -117,9 +117,6 @@ function App() {
                 </div>
                 <div className="technology" id="css">
                   <p>CSS3</p>
-                </div>
-                <div className="technology">
-                  <p>EJS</p>
                 </div>
                 <a rel="noreferrer" href="https://socket.io/" target="_blank" className="technology">
                   <p>Socket.io</p>
