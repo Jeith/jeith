@@ -160,7 +160,7 @@ function App() {
               <a href="https://pennystreams.com" rel="noreferrer" target="_blank">
                 <h3>pennystreams.com</h3>
               </a>
-              <span>Pennystreams is latest project that I've built. Pennystreams uses APIs to get artists' Spotify playcount and calculate artists' Spotify payouts based off of it.</span>
+              <span>Pennystreams is the latest project that I've built. Pennystreams uses APIs to get artists' Spotify play count and calculate artists' Spotify payouts based on it.</span>
               <div className="technologies-container">
                 <div className="technology">
                   <p class="technology-heading">Technologies Used:</p>
