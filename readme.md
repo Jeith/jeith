@@ -14,7 +14,7 @@ to my personal GitHub profile!
 <td align="center">
 <a href="https://jeith.com">
 <strong>Visit my personal website </strong>
-<img alt="Globe" height="80" src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif?raw=true">
+<img alt="Globe" height="80" style="display: block;" src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif?raw=true">
 </a>
 </td>
 
@@ -22,7 +22,7 @@ to my personal GitHub profile!
 <br />
 <a href="https://github.com/Jeith/jeith/issues">
 <strong>Sign my guest book</strong>
-<img height="100" alt="Guestbook" src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif?raw=true">  
+<img height="100" style="display: block;" alt="Guestbook" src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif?raw=true">  
 </a>
 </td>
 </tr>
