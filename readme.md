@@ -7,6 +7,7 @@
 to my personal GitHub profile!
 </div>
 <br />
+<img alt="Globe" height="80" src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif?raw=true">
 
 <!-- Social -->
 <table width="100%">
