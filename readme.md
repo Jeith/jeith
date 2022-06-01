@@ -21,7 +21,7 @@ to my personal GitHub profile!
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<img alt="Globe" height="80" src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif">
+<img alt="Globe" height="80" src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif?raw=true">
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -41,7 +41,7 @@ to my personal GitHub profile!
 <span></span> 
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-<img height="100" alt="Guestbook" src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif"> 
+<img height="100" alt="Guestbook" src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif?raw=true"> 
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span></span>
 <span></span>
