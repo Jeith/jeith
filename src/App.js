@@ -36,26 +36,26 @@ function App() {
     <React.Fragment>
       <section className="hero">
         <div className="background-shapes">
-          <div className="rectangle curved" id="rectangle-1"></div>
-          <div className="rectangle curved" id="rectangle-2"></div>
-          <div className="rectangle curved" id="rectangle-3"></div>
-          <div className="rectangle curved" id="rectangle-4"></div>
-          <div className="rectangle curved" id="rectangle-5"></div>
-          <div className="square curved" id="square-1"></div>
-          <div className="square curved" id="square-2"></div>
-          <div className="square curved" id="square-3"></div>
-          <div className="square curved" id="square-4"></div>
-          <div className="square curved" id="square-5"></div>
-          <div className="square curved" id="square-6"></div>
-          <div className="square curved sm" id="square-7"></div>
-          <div className="circle" id="circle-1"></div>
-          <div className="circle" id="circle-2"></div>
-          <div className="circle" id="circle-3"></div>
-          <div className="circle" id="circle-4"></div>
-          <div className="circle" id="circle-5"></div>
-          <div className="circle" id="circle-6"></div>
-          <div className="circle" id="circle-7"></div>
-          <div className="circle" id="circle-8"></div>
+          <div className="rectangle rectangle-1 curved"></div>
+          <div className="rectangle rectangle-2 curved"></div>
+          <div className="rectangle rectangle-3 curved"></div>
+          <div className="rectangle rectangle-4 curved"></div>
+          <div className="rectangle rectangle-5 curved"></div>
+          <div className="square square-1 curved"></div>
+          <div className="square square-2 curved"></div>
+          <div className="square square-3 curved"></div>
+          <div className="square square-4 curved"></div>
+          <div className="square square-5 curved"></div>
+          <div className="square square-6 curved"></div>
+          <div className="square square-7 curved sm"></div>
+          <div className="circle circle-1"></div>
+          <div className="circle circle-2"></div>
+          <div className="circle circle-3"></div>
+          <div className="circle circle-4"></div>
+          <div className="circle circle-5"></div>
+          <div className="circle circle-6"></div>
+          <div className="circle circle-7"></div>
+          <div className="circle circle-8"></div>
         </div>
 
         <h1 className={h1Classname}>jeith.</h1>
@@ -63,18 +63,18 @@ function App() {
 
       <section className="about-me">
         <div className="background-shapes">
-          <div className="rectangle curved" id="rectangle-3"></div>
-          <div className="rectangle curved" id="rectangle-6"></div>
-          <div className="square curved" id="square-3"></div>
-          <div className="square curved" id="square-4"></div>
-          <div className="square curved" id="square-6"></div>
-          <div className="square curved sm" id="square-7"></div>
+          <div className="rectangle rectangle-3 curved"></div>
+          <div className="rectangle rectangle-6 curved"></div>
+          <div className="square square-3 curved"></div>
+          <div className="square square-4 curved"></div>
+          <div className="square square-6 curved"></div>
+          <div className="square square-7 curved sm"></div>
           <div className="square curved sm" id="square-8"></div>
           <div className="square curved" id="square-9"></div>
-          <div className="circle" id="circle-1"></div>
-          <div className="circle" id="circle-6"></div>
-          <div className="circle" id="circle-7"></div>
-          <div className="circle" id="circle-8"></div>
+          <div className="circle circle-1"></div>
+          <div className="circle circle-6"></div>
+          <div className="circle circle-7"></div>
+          <div className="circle circle-8"></div>
         </div>
 
         <div className="section-wrapper">
@@ -163,7 +163,7 @@ function App() {
               <span>Pennystreams is the latest project that I've built. Pennystreams uses APIs to get artists' Spotify play count and calculate artists' Spotify payouts based on it.</span>
               <div className="technologies-container">
                 <div className="technology">
-                  <p class="technology-heading">Technologies Used:</p>
+                  <p className="technology-heading">Technologies Used:</p>
                 </div>
                 <div className="technology">
                   <p className="teal">Node.js</p>
@@ -194,7 +194,7 @@ function App() {
               <span>This PWA is my latest portfolio that I built in 2021. This website is built with React and hosted via Cloudflare Pages.</span>
               <div className="technologies-container">
                 <div className="technology">
-                  <p class="technology-heading">Technologies Used:</p>
+                  <p className="technology-heading">Technologies Used:</p>
                 </div>
                 <div className="technology">
                   <p className="teal">React</p>
@@ -222,7 +222,7 @@ function App() {
               <span>The Palette Center is a project that I created in 2018. This web application is built with React and Redux and can be used to generate color palettes.</span>
               <div className="technologies-container">
                 <div className="technology">
-                  <p class="technology-heading">Technologies Used:</p>
+                  <p className="technology-heading">Technologies Used:</p>
                 </div>
                 <div className="technology">
                   <p className="teal">React</p>
@@ -256,7 +256,7 @@ function App() {
               <span>I built this text-based hero RPG when I was learning Python in 2018. This game allows players to fight different ASCII art creatures that drop coins, and the player can use these coins to purchase items. Users can play this game by running the <a rel="noreferrer" href="https://github.com/Jeith/Basic-Hero-RPG/blob/master/hero-rpg.py" target="_blank">hero-rpg.py</a> file through their Python compiler.</span>
               <div className="technologies-container">
                 <div className="technology">
-                  <p class="technology-heading">Technologies Used:</p>
+                  <p className="technology-heading">Technologies Used:</p>
                 </div>
                 <div className="technology">
                   <p className="teal">Python</p>

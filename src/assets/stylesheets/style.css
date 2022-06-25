@@ -180,42 +180,42 @@ body .rectangle {
   transform: rotate(45deg);
   height: 25px;
   width: 25px; }
-  body .rectangle#rectangle-1 {
+  body .rectangle.rectangle-1 {
     background-color: #E73A2A;
     transform: rotate(45deg);
     position: absolute;
     right: 18%;
     top: 12%;
     height: 15px; }
-  body .rectangle#rectangle-2 {
+  body .rectangle.rectangle-2 {
     background-color: #E73A2A;
     transform: rotate(-60deg);
     position: absolute;
     left: 27%;
     bottom: 15%;
     width: 15px; }
-  body .rectangle#rectangle-3 {
+  body .rectangle.rectangle-3 {
     background-color: #E73A2A;
     transform: rotate(45deg);
     position: absolute;
     left: 9%;
     top: 6%;
     width: 15px; }
-  body .rectangle#rectangle-4 {
+  body .rectangle.rectangle-4 {
     background-color: #6CCEAF;
     transform: rotate(45deg);
     position: absolute;
     right: 9%;
     bottom: 22%;
     width: 15px; }
-  body .rectangle#rectangle-5 {
+  body .rectangle.rectangle-5 {
     background-color: #6CCEAF;
     transform: rotate(74deg);
     position: absolute;
     left: 38%;
     top: 12%;
     width: 15px; }
-  body .rectangle#rectangle-6 {
+  body .rectangle.rectangle-6 {
     background-color: #6CCEAF;
     transform: rotate(74deg);
     position: absolute;
@@ -233,7 +233,7 @@ body .square {
   body .square.sm {
     width: 50px;
     height: 50px; }
-  body .square#square-1 {
+  body .square.square-1 {
     -webkit-animation-delay: false;
     -webkit-animation-duration: 60s;
     -webkit-animation-name: rotating-counter-clockwise;
@@ -257,7 +257,7 @@ body .square {
     position: absolute;
     right: 35%;
     bottom: 20%; }
-  body .square#square-2 {
+  body .square.square-2 {
     -webkit-animation-delay: false;
     -webkit-animation-duration: 10s;
     -webkit-animation-name: rotate-and-stop-2;
@@ -281,13 +281,13 @@ body .square {
     position: absolute;
     left: 20%;
     top: 21%; }
-  body .square#square-3 {
+  body .square.square-3 {
     background-color: #6CCEAF;
     transform: rotate(45deg);
     position: absolute;
     left: 9%;
     bottom: 6%; }
-  body .square#square-4 {
+  body .square.square-4 {
     -webkit-animation-delay: false;
     -webkit-animation-duration: 10s;
     -webkit-animation-name: rotate-and-stop;
@@ -311,7 +311,7 @@ body .square {
     position: absolute;
     right: 3%;
     top: 29%; }
-  body .square#square-5 {
+  body .square.square-5 {
     -webkit-animation-delay: false;
     -webkit-animation-duration: 60s;
     -webkit-animation-name: rotating;
@@ -335,7 +335,7 @@ body .square {
     position: absolute;
     right: 36%;
     top: -2%; }
-  body .square#square-6 {
+  body .square.square-6 {
     -webkit-animation-delay: false;
     -webkit-animation-duration: 60s;
     -webkit-animation-name: rotating;
@@ -359,7 +359,7 @@ body .square {
     position: absolute;
     left: -1%;
     top: 47%; }
-  body .square#square-7 {
+  body .square.square-7 {
     -webkit-animation-delay: false;
     -webkit-animation-duration: 21s;
     -webkit-animation-name: bobble-1;
@@ -382,7 +382,7 @@ body .square {
     position: absolute;
     right: 22%;
     top: 37%; }
-  body .square#square-8 {
+  body .square.square-8 {
     -webkit-animation-delay: false;
     -webkit-animation-duration: 21s;
     -webkit-animation-name: bobble-1;
@@ -405,7 +405,7 @@ body .square {
     position: absolute;
     right: 0%;
     bottom: 4%; }
-  body .square#square-9 {
+  body .square.square-9 {
     -webkit-animation-delay: false;
     -webkit-animation-duration: 60s;
     -webkit-animation-name: rotating;
@@ -433,22 +433,22 @@ body .circle {
   border-radius: 50%;
   height: 35px;
   width: 35px; }
-  body .circle#circle-1 {
+  body .circle.circle-1 {
     background-color: #FC8300;
     position: absolute;
     right: 17%;
     bottom: 5%; }
-  body .circle#circle-2 {
+  body .circle.circle-2 {
     background-color: #FC8300;
     position: absolute;
     left: 17%;
     bottom: 32%; }
-  body .circle#circle-3 {
+  body .circle.circle-3 {
     background-color: #E73A2A;
     position: absolute;
     left: 48%;
     top: 22%; }
-  body .circle#circle-4 {
+  body .circle.circle-4 {
     -webkit-animation-delay: false;
     -webkit-animation-duration: 28s;
     -webkit-animation-name: bobble-1;
@@ -471,14 +471,14 @@ body .circle {
     position: absolute;
     left: 6%;
     top: 22%; }
-  body .circle#circle-5 {
+  body .circle.circle-5 {
     background-color: #FC8300;
     position: absolute;
     right: 11%;
     bottom: 40%;
     width: 60px;
     height: 60px; }
-  body .circle#circle-6 {
+  body .circle.circle-6 {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
@@ -490,7 +490,7 @@ body .circle {
     right: 2%;
     top: 1%;
     height: 74px; }
-  body .circle#circle-7 {
+  body .circle.circle-7 {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
@@ -502,7 +502,7 @@ body .circle {
     left: 41%;
     bottom: 26%;
     width: 65px; }
-  body .circle#circle-8 {
+  body .circle.circle-8 {
     background-color: #FC8300;
     transform: rotate(-13deg);
     position: absolute;
@@ -524,25 +524,25 @@ body.home {
     overflow-x: hidden; }
     body.home.loaded .hero:after {
       opacity: 0; }
-  body.home.dark-mode .square#square-3 {
+  body.home.dark-mode .square.square-3 {
     background-color: #355CB0; }
-  body.home.dark-mode .square#square-7 {
+  body.home.dark-mode .square.square-7 {
     background-color: #355CB0; }
-  body.home.dark-mode .square#square-8 {
+  body.home.dark-mode .square.square-8 {
     background-color: #355CB0; }
-  body.home.dark-mode .rectangle#rectangle-1 {
+  body.home.dark-mode .rectangle.rectangle-1 {
     background-color: #355CB0; }
-  body.home.dark-mode .rectangle#rectangle-4 {
+  body.home.dark-mode .rectangle.rectangle-4 {
     background-color: #355CB0; }
-  body.home.dark-mode .rectangle#rectangle-5 {
+  body.home.dark-mode .rectangle.rectangle-5 {
     background-color: #355CB0; }
-  body.home.dark-mode .rectangle#rectangle-6 {
+  body.home.dark-mode .rectangle.rectangle-6 {
     background-color: #355CB0; }
-  body.home.dark-mode .circle#circle-4 {
+  body.home.dark-mode .circle.circle-4 {
     background-color: #355CB0; }
-  body.home.dark-mode .circle#circle-6 {
+  body.home.dark-mode .circle.circle-6 {
     background-color: #355CB0; }
-  body.home.dark-mode .circle#circle-7 {
+  body.home.dark-mode .circle.circle-7 {
     background-color: #355CB0; }
   body.home.dark-mode .hero {
     background-color: #000000; }
@@ -833,6 +833,8 @@ body .project-section {
       body .project-section .project.reverse .image-container:before {
         left: 15px;
         border-radius: 0 0 25px 0; }
+      body .project-section .project.reverse .text h3 {
+        border-radius: 90px 100px 80px 35px; }
     body .project-section .project .image-container {
       width: 47%;
       height: 20vw; }
@@ -1020,7 +1022,7 @@ footer {
   body.home .project-section .image-container {
     height: 34vw; } }
 @media all and (max-width: 500px) {
-  body .circle#circle-7 {
+  body .circle.circle-7 {
     display: none; }
   body.home .hero h1 {
     font-size: 130px;
