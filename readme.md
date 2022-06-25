@@ -39,7 +39,6 @@ to my personal GitHub profile!
 </div>
 
 <br />
-<hr>
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/notepad.gif" alt="Site created with Notepad" height="30" />
