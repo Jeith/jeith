@@ -10,47 +10,20 @@ to my personal GitHub profile!
 
 
 <!-- Social -->
-<p width="100%" style="display: flex;">
 <div align="center">
-<a href="https://jeith.com">
 <strong>Visit my personal website</strong>
-<br />
-<br />
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-[<img alt="" width="40px" src="public/assets/readme/globe.gif" />](https://jeith.com)
-
-<img alt="" height="80" src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif">
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-</a>
+<a href="https://jeith.com"><img src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif" alt="" align="center"></a>
 </div>
+
+<hr>
 
 <div align="center">
-<a href="https://github.com/Jeith/jeith/issues">
 <strong>Sign my guest book</strong>
-</a>
-<br />
-<br />
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
-<img height="100" alt="Guestbook" src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif"> 
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    
+<a href="https://github.com/Jeith/jeith/issues"><img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif" alt="" align="center"></a>
 </div>
-</p>
+
+<hr>
+
 
 <div align="center">
 <div>
