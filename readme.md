@@ -13,6 +13,7 @@ to my personal GitHub profile!
 <div align="center">
 <a href="https://jeith.com">
 <strong>Visit my personal website </strong>
+</a>
 <br />
 <br />
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -26,12 +27,12 @@ to my personal GitHub profile!
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-</a>
 </div>
 
 <div align="center">
 <a href="https://github.com/Jeith/jeith/issues">
 <strong>Sign my guest book</strong>
+</a>
 <br />
 <br />
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -45,7 +46,6 @@ to my personal GitHub profile!
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    
-</a>
 </div>
 
 <div align="center">
