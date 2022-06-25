@@ -8,6 +8,8 @@ to my personal GitHub profile!
 </div>
 <br />
 
+[<img alt="" width="40px" src="public/assets/readme/globe.gif" />](https://jeith.com)
+
 <!-- Social -->
 <p width="100%" style="display: flex;">
 <div align="center">
