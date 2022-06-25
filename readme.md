@@ -8,7 +8,6 @@ to my personal GitHub profile!
 </div>
 <br />
 
-[<img alt="" width="40px" src="public/assets/readme/globe.gif" />](https://jeith.com)
 
 <!-- Social -->
 <p width="100%" style="display: flex;">
@@ -22,7 +21,8 @@ to my personal GitHub profile!
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-![Globe](https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif)
+[<img alt="" width="40px" src="public/assets/readme/globe.gif" />](https://jeith.com)
+
 <img alt="" height="80" src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif">
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
