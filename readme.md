@@ -9,7 +9,7 @@ to my personal GitHub profile!
 <br />
 
 <!-- Social -->
-<div width="100%" style="display: flex;">
+<p width="100%" style="display: flex;">
 <div align="center">
 <a href="https://jeith.com">
 <strong>Visit my personal website</strong>
@@ -47,9 +47,10 @@ to my personal GitHub profile!
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    
 </div>
-</div>
+</p>
 
 <div align="center">
+<div>
 <img src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/thanks.gif?raw=true" alt="Thanks" align="center">
 </div>
 <p>for visiting my page!</p>
@@ -58,7 +59,7 @@ to my personal GitHub profile!
 <br />
 
 <div align="center">
-<img src="https://profile-counter.glitch.me/jeith/count.svg" alt="" align="center">
+<img src="https://profile-counter.glitch.me/jeith/count.svg" alt="hit counter" align="center">
 </div>
 
 <br />
