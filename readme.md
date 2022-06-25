@@ -8,17 +8,18 @@ to my personal GitHub profile!
 </div>
 <br />
 
+<hr>
 
 <!-- Social -->
 <div align="center">
-<p>Visit my personal website</p>
+<a href="https://jeith.com">Visit my personal website</a>
 <a href="https://jeith.com"><img src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif" alt="" align="center"></a>
 </div>
 
 <hr>
 
 <div align="center">
-<p>Sign my guest book</p>
+<a href="https://github.com/Jeith/jeith/issues">Sign my guest book</a>
 <a href="https://github.com/Jeith/jeith/issues"><img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif" alt="" align="center"></a>
 </div>
 
@@ -39,6 +40,7 @@ to my personal GitHub profile!
 </div>
 
 <br />
+<hr>
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/notepad.gif" alt="Site created with Notepad" height="30" />
