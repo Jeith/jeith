@@ -9,9 +9,8 @@ to my personal GitHub profile!
 <br />
 
 <!-- Social -->
-<table width="100%">
-<tr>
-<td align="center">
+<div width="100%" style="display: flex;">
+<div align="center">
 <a href="https://jeith.com">
 <strong>Visit my personal website </strong>
 <br />
@@ -28,9 +27,9 @@ to my personal GitHub profile!
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 </a>
-</td>
+</div>
 
-<td align="center">
+<div align="center">
 <a href="https://github.com/Jeith/jeith/issues">
 <strong>Sign my guest book</strong>
 <br />
@@ -47,9 +46,7 @@ to my personal GitHub profile!
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    
 </a>
-</td>
-</tr>
-</table>
+</div>
 
 <div align="center">
 <div>
