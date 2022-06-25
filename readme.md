@@ -11,14 +11,14 @@ to my personal GitHub profile!
 
 <!-- Social -->
 <div align="center">
-<strong>Visit my personal website</strong>
+<p>Visit my personal website</p>
 <a href="https://jeith.com"><img src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif" alt="" align="center"></a>
 </div>
 
 <hr>
 
 <div align="center">
-<strong>Sign my guest book</strong>
+<p>Sign my guest book</p>
 <a href="https://github.com/Jeith/jeith/issues"><img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif" alt="" align="center"></a>
 </div>
 
