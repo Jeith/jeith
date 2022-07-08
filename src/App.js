@@ -81,7 +81,7 @@ function App() {
           <div className="textbox">
             <div>
               <h2>Hi, my name is Keith!</h2>
-              <span>I'm a full stack software developer living in Austin, TX. I've been programming for around 3 years, and I'm most proficient in web &amp; mobile app development. I first started as a hobbyist developer by learning how to code on my own through <a rel="noreferrer" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> and <a rel="noreferrer" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> in early 2018. Later on that year, I attended a coding bootcamp where I learned how to build full stack web applications. I've been working professionally as a software engineer since attending coding bootcamp, and I use React, Flutter, and various other technologies to build web and mobile applications.<br/></span>
+              <span>I'm a full stack software developer living in Austin, TX. I've been programming for 4+ years, and I'm most proficient in web &amp; mobile app development. I first started as a hobbyist developer by learning how to code on my own through <a rel="noreferrer" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> and <a rel="noreferrer" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> in early 2018. Later that year, I attended a coding bootcamp where I learned how to build full stack web applications. I've been working professionally as a software engineer since attending coding bootcamp, and I use React, Flutter, and various other technologies to build web and mobile applications.<br/></span>
             </div>
       
             <div className="technologies">
@@ -92,40 +92,34 @@ function App() {
                   <p>Flutter</p>
                 </div>
                 <div className="technology">
-                  <p>JavaScript</p>
-                </div>
-                <div className="technology">
                   <p>React</p>
                 </div>
                 <div className="technology">
                   <p>Angular</p>
                 </div>
                 <div className="technology">
-                  <p>Redux</p>
+                  <p>Node.js</p>
                 </div>
                 <div className="technology">
-                  <p>Node.js</p>
+                  <p>TypeScript</p>
                 </div>
                 <div className="technology">
                   <p>Python</p>
                 </div>
-                <div className="technology">
-                  <p>HTML5</p>
-                </div>
                 <div className="technology" id="sass">
                   <p>Sass</p>
                 </div>
-                <div className="technology" id="css">
-                  <p>CSS3</p>
-                </div>
-                <a rel="noreferrer" href="https://socket.io/" target="_blank" className="technology">
-                  <p>Socket.io</p>
-                </a>
                 <div className="technology">
                   <p>PostgreSQL</p>
                 </div>
                 <div className="technology">
                   <p>Wordpress</p>
+                </div>
+                <div className="technology">
+                  <p>HTML5</p>
+                </div>
+                <div className="technology" id="css">
+                  <p>CSS3</p>
                 </div>
                 <a rel="noreferrer" href="https://github.com/Jeith" target="_blank" className="technology">
                   <p>Git</p>
@@ -191,16 +185,13 @@ function App() {
               <span onClick={() => toggleDarkMode()} id="jeith">
                 <h3>jeith.com</h3>
               </span>
-              <span>This PWA is my latest portfolio that I built in 2021. This website is built with React and hosted via Cloudflare Pages.</span>
+              <span>This is my latest portfolio. This website is built with React and hosted via Cloudflare Pages.</span>
               <div className="technologies-container">
                 <div className="technology">
                   <p className="technology-heading">Technologies Used:</p>
                 </div>
                 <div className="technology">
                   <p className="teal">React</p>
-                </div>
-                <div className="technology">
-                  <p className="orange">HTML5</p>
                 </div>
                 <div className="technology">
                   <p className="yellow">Sass/CSS3</p>
