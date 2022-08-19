@@ -1,63 +1,70 @@
-import React, {useState, useEffect} from 'react';
-import './assets/stylesheets/style.css';
-import mii from './assets/images/mii.png';
-import miiBlinking from './assets/images/mii-blinking.png';
-import pennystreams from './assets/images/projects/pennystreams.png';
-import jeith from './assets/images/projects/jeith.png';
-import paletteCenter from './assets/images/projects/the-palette-center.png';
-import heroRPG from './assets/images/projects/hero-rpg.png';
+import React, { useState, useEffect } from "react";
+import "./assets/stylesheets/style.css";
+import mii from "./assets/images/mii.png";
+import miiBlinking from "./assets/images/mii-blinking.png";
+import pennystreams from "./assets/images/projects/pennystreams.png";
+import jeith from "./assets/images/projects/jeith.png";
+import paletteCenter from "./assets/images/projects/the-palette-center.png";
+import heroRPG from "./assets/images/projects/hero-rpg.png";
 
 function App() {
   let [h1Classname, setH1Classname] = useState("");
   let [isSleeping, setIsSleeping] = useState(false);
 
   useEffect(() => {
-    toggleColorTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light', false);
+    toggleColorTheme(
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light",
+      false
+    );
 
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => toggleColorTheme(e.matches ? 'dark' : 'light', false));
-  
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (e) =>
+        toggleColorTheme(e.matches ? "dark" : "light", false)
+      );
+
     setTimeout(() => {
       setH1Classname("reveal");
     }, 500);
 
     return () => {
-      window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', () => {
-      });
-    }
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .removeEventListener("change", () => {});
+    };
   }, []);
 
-  const toggleColorTheme = (mode = 'light', clickEvent = true) => {
-    console.log(mode)
-
+  const toggleColorTheme = (mode = "light", clickEvent = true) => {
     if (clickEvent) {
       if (document.body.classList.contains("dark-mode")) {
         document.body.classList.remove("dark-mode");
-        setIsSleeping(false)
-  
+        setIsSleeping(false);
       } else {
         document.body.classList.add("dark-mode");
-        setIsSleeping(true)
+        setIsSleeping(true);
       }
     } else {
-      if (mode === 'light') {
-        setIsSleeping(false)
+      if (mode === "light") {
+        setIsSleeping(false);
 
         if (document.body.classList.contains("dark-mode")) {
           document.body.classList.remove("dark-mode");
         }
       } else {
-        setIsSleeping(true)
+        setIsSleeping(true);
 
         if (!document.body.classList.contains("dark-mode")) {
           document.body.classList.add("dark-mode");
         }
       }
     }
-  }
+  };
 
   const scrollToTop = () => {
-    window.scrollTo({top: 0, behavior: 'smooth'})
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <React.Fragment>
@@ -108,12 +115,38 @@ function App() {
           <div className="textbox">
             <div>
               <h2>Hi, my name is Keith!</h2>
-              <span>I'm a full stack software developer living in Austin, TX. I've been programming for 4+ years, and I'm most proficient in web &amp; mobile app development. I first started as a hobbyist developer by learning how to code on my own through <a rel="noreferrer" href="https://www.theodinproject.com/" target="_blank">The Odin Project</a> and <a rel="noreferrer" href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a> in early 2018. Later that year, I attended a coding bootcamp where I learned how to build full stack web applications. I've been working professionally as a software engineer since attending coding bootcamp, and I use React, Flutter, and various other technologies to build web and mobile applications.<br/></span>
+              <span>
+                I'm a full stack software developer living in Austin, TX. I've
+                been programming for 4+ years, and I'm most proficient in web
+                &amp; mobile app development. I first started as a hobbyist
+                developer by learning how to code on my own through{" "}
+                <a
+                  rel="noreferrer"
+                  href="https://www.theodinproject.com/"
+                  target="_blank"
+                >
+                  The Odin Project
+                </a>{" "}
+                and{" "}
+                <a
+                  rel="noreferrer"
+                  href="https://www.freecodecamp.org/"
+                  target="_blank"
+                >
+                  FreeCodeCamp
+                </a>{" "}
+                in early 2018. Later that year, I attended a coding bootcamp
+                where I learned how to build full stack web applications. I've
+                been working professionally as a software engineer since
+                attending coding bootcamp, and I use React, Flutter, and various
+                other technologies to build web and mobile applications.
+                <br />
+              </span>
             </div>
-      
+
             <div className="technologies">
               <h2>Technologies I've been using:</h2>
-      
+
               <div className="technologies-container">
                 <div className="technology">
                   <p>Flutter</p>
@@ -148,7 +181,12 @@ function App() {
                 <div className="technology" id="css">
                   <p>CSS3</p>
                 </div>
-                <a rel="noreferrer" href="https://github.com/Jeith" target="_blank" className="technology">
+                <a
+                  rel="noreferrer"
+                  href="https://github.com/Jeith"
+                  target="_blank"
+                  className="technology"
+                >
                   <p>Git</p>
                 </a>
                 <div className="technology">
@@ -158,11 +196,15 @@ function App() {
             </div>
           </div>
           <div className="img-wrapper">
-            {
-              isSleeping ? 
-                <img src={miiBlinking} alt="Mii blinking" onClick={() => toggleColorTheme()} /> : 
-                <img src={mii} alt="Mii" onClick={() => toggleColorTheme()} />
-            }
+            {isSleeping ? (
+              <img
+                src={miiBlinking}
+                alt="Mii blinking"
+                onClick={() => toggleColorTheme()}
+              />
+            ) : (
+              <img src={mii} alt="Mii" onClick={() => toggleColorTheme()} />
+            )}
           </div>
         </div>
       </section>
@@ -178,10 +220,18 @@ function App() {
             </div>
 
             <div className="text">
-              <a href="https://pennystreams.com" rel="noreferrer" target="_blank">
+              <a
+                href="https://pennystreams.com"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <h3>pennystreams.com</h3>
               </a>
-              <span>Pennystreams is the latest project that I've built. Pennystreams uses APIs to get artists' Spotify play count and calculate artists' Spotify payouts based on it.</span>
+              <span>
+                Pennystreams is the latest project that I've built. Pennystreams
+                uses APIs to get artists' Spotify play count and calculate
+                artists' Spotify payouts based on it.
+              </span>
               <div className="technologies-container">
                 <div className="technology">
                   <p className="technology-heading">Technologies Used:</p>
@@ -204,7 +254,10 @@ function App() {
           <div className="project reverse">
             <div className="image-container">
               <div className="image-wrapper">
-                <img src={jeith} alt="This is a screenshot of the site your on!" />
+                <img
+                  src={jeith}
+                  alt="This is a screenshot of the site your on!"
+                />
               </div>
             </div>
 
@@ -212,7 +265,10 @@ function App() {
               <span onClick={() => toggleColorTheme()} id="jeith">
                 <h3>jeith.com</h3>
               </span>
-              <span>This is my latest portfolio. This website is built with React and hosted via Cloudflare Pages.</span>
+              <span>
+                This is my latest portfolio. This website is built with React
+                and hosted via Cloudflare Pages.
+              </span>
               <div className="technologies-container">
                 <div className="technology">
                   <p className="technology-heading">Technologies Used:</p>
@@ -229,15 +285,26 @@ function App() {
           <div className="project">
             <div className="image-container">
               <div className="image-wrapper">
-                <img src={paletteCenter} alt="Screenshot of the Palette Center" />
+                <img
+                  src={paletteCenter}
+                  alt="Screenshot of the Palette Center"
+                />
               </div>
             </div>
 
             <div className="text">
-              <a rel="noreferrer" href="https://palette-generator.pages.dev/" target="_blank">
+              <a
+                rel="noreferrer"
+                href="https://palette-generator.pages.dev/"
+                target="_blank"
+              >
                 <h3>thepalettecenter.com</h3>
               </a>
-              <span>The Palette Center is a project that I created in 2018. This web application is built with React and Redux and can be used to generate color palettes.</span>
+              <span>
+                The Palette Center is a project that I created in 2018. This web
+                application is built with React and Redux and can be used to
+                generate color palettes.
+              </span>
               <div className="technologies-container">
                 <div className="technology">
                   <p className="technology-heading">Technologies Used:</p>
@@ -263,15 +330,35 @@ function App() {
           <div className="project reverse">
             <div className="image-container">
               <div className="image-wrapper">
-                <img src={heroRPG} alt="Screenshot of the text-based Hero RPG" />
+                <img
+                  src={heroRPG}
+                  alt="Screenshot of the text-based Hero RPG"
+                />
               </div>
             </div>
 
             <div className="text">
-              <a rel="noreferrer" href="https://github.com/Jeith/Basic-Hero-RPG" target="_blank">
+              <a
+                rel="noreferrer"
+                href="https://github.com/Jeith/Basic-Hero-RPG"
+                target="_blank"
+              >
                 <h3>Text-based Hero RPG</h3>
               </a>
-              <span>I built this text-based hero RPG when I was learning Python in 2018. This game allows players to fight different ASCII art creatures that drop coins, and the player can use these coins to purchase items. Users can play this game by running the <a rel="noreferrer" href="https://github.com/Jeith/Basic-Hero-RPG/blob/master/hero-rpg.py" target="_blank">hero-rpg.py</a> file through their Python compiler.</span>
+              <span>
+                I built this text-based hero RPG when I was learning Python in
+                2018. This game allows players to fight different ASCII art
+                creatures that drop coins, and the player can use these coins to
+                purchase items. Users can play this game by running the{" "}
+                <a
+                  rel="noreferrer"
+                  href="https://github.com/Jeith/Basic-Hero-RPG/blob/master/hero-rpg.py"
+                  target="_blank"
+                >
+                  hero-rpg.py
+                </a>{" "}
+                file through their Python compiler.
+              </span>
               <div className="technologies-container">
                 <div className="technology">
                   <p className="technology-heading">Technologies Used:</p>
