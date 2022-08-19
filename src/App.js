@@ -9,22 +9,49 @@ import heroRPG from './assets/images/projects/hero-rpg.png';
 
 function App() {
   let [h1Classname, setH1Classname] = useState("");
-  let [isBlinking, setIsBlinking] = useState(false);
+  let [isSleeping, setIsSleeping] = useState(false);
 
   useEffect(() => {
+    toggleColorTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light', false);
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => toggleColorTheme(e.matches ? 'dark' : 'light', false));
+  
     setTimeout(() => {
       setH1Classname("reveal");
-  }, 500);
+    }, 500);
+
+    return () => {
+      window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', () => {
+      });
+    }
   }, []);
 
-  const toggleDarkMode = () => {
-    if (document.body.classList.contains("dark-mode")) {
-      document.body.classList.remove("dark-mode");
-      setIsBlinking(false)
+  const toggleColorTheme = (mode = 'light', clickEvent = true) => {
+    console.log(mode)
 
+    if (clickEvent) {
+      if (document.body.classList.contains("dark-mode")) {
+        document.body.classList.remove("dark-mode");
+        setIsSleeping(false)
+  
+      } else {
+        document.body.classList.add("dark-mode");
+        setIsSleeping(true)
+      }
     } else {
-      document.body.classList.add("dark-mode");
-      setIsBlinking(true)
+      if (mode === 'light') {
+        setIsSleeping(false)
+
+        if (document.body.classList.contains("dark-mode")) {
+          document.body.classList.remove("dark-mode");
+        }
+      } else {
+        setIsSleeping(true)
+
+        if (!document.body.classList.contains("dark-mode")) {
+          document.body.classList.add("dark-mode");
+        }
+      }
     }
   }
 
@@ -132,9 +159,9 @@ function App() {
           </div>
           <div className="img-wrapper">
             {
-              isBlinking ? 
-                <img src={miiBlinking} alt="Mii blinking" onClick={() => toggleDarkMode()} /> : 
-                <img src={mii} alt="Mii" onClick={() => toggleDarkMode()} />
+              isSleeping ? 
+                <img src={miiBlinking} alt="Mii blinking" onClick={() => toggleColorTheme()} /> : 
+                <img src={mii} alt="Mii" onClick={() => toggleColorTheme()} />
             }
           </div>
         </div>
@@ -182,7 +209,7 @@ function App() {
             </div>
 
             <div className="text">
-              <span onClick={() => toggleDarkMode()} id="jeith">
+              <span onClick={() => toggleColorTheme()} id="jeith">
                 <h3>jeith.com</h3>
               </span>
               <span>This is my latest portfolio. This website is built with React and hosted via Cloudflare Pages.</span>
