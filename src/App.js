@@ -158,6 +158,9 @@ function App() {
                   <p>Angular</p>
                 </div>
                 <div className="technology">
+                  <p>Unity</p>
+                </div>
+                <div className="technology">
                   <p>Node.js</p>
                 </div>
                 <div className="technology">
@@ -171,9 +174,6 @@ function App() {
                 </div>
                 <div className="technology">
                   <p>PostgreSQL</p>
-                </div>
-                <div className="technology">
-                  <p>Wordpress</p>
                 </div>
                 <div className="technology">
                   <p>HTML5</p>
