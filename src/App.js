@@ -135,11 +135,18 @@ function App() {
                 >
                   FreeCodeCamp
                 </a>{" "}
-                in early 2018. Later that year, I attended a coding bootcamp
-                where I learned how to build full stack web applications. I've
-                been working professionally as a software engineer since
-                attending coding bootcamp, and I use React, Flutter, and various
-                other technologies to build web and mobile applications.
+                in early 2018. I'm now working professionally as an UI engineer,
+                and I use React, Flutter, and various other technologies to
+                build web and mobile applications. Outside work, I'm interested
+                in game development and all things{" "}
+                <a
+                  rel="noreferrer"
+                  href="https://github.com/Jeith"
+                  target="_blank"
+                >
+                  open source
+                </a>
+                .
                 <br />
               </span>
             </div>
