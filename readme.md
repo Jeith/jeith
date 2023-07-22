@@ -11,8 +11,8 @@ to my personal GitHub profile!
 <hr>
 
 <!-- Social -->
-<div align="center"><a href="https://jeith.com"><img src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif" alt="" align="center"></a><br /><br />
-<a href="https://jeith.com"><strong>Visit my personal website</strong></a>
+<div align="center"><a href="https://portfolio.jeith.com"><img src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif" alt="" align="center"></a><br /><br />
+<a href="https://portfolio.jeith.com"><strong>Visit my personal website</strong></a>
 </div>
 
 <hr>
