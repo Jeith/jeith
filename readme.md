@@ -12,7 +12,7 @@ to my personal GitHub profile!
 
 <!-- Social -->
 <div align="center"><a href="https://portfolio.jeith.com"><img src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif" alt="" align="center"></a><br /><br />
-<a href="https://portfolio.jeith.com"><strong>Visit my personal website</strong></a>
+<a href="https://portfolio.jeith.com"><strong>Visit my portfolio</strong></a>
 </div>
 
 <hr>
