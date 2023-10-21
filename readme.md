@@ -41,7 +41,7 @@ to my personal GitHub profile!
 <br />
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/notepad.gif" alt="Site created with Notepad" height="30" />
+<img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/paws.png" alt="Made with my own two paws" height="30" />
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>  
 <img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/ie_logo.gif" alt="Microsoft Internet Explorer" />
 </div>
