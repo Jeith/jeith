@@ -18,8 +18,8 @@ to my personal GitHub profile!
 <hr>
 
 <div align="center">
-<a href="https://github.com/Jeith/jeith/issues"><img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif" alt="" align="center"></a><br />
-<a href="https://github.com/Jeith/jeith/issues"><strong>Sign my guest book</strong></a>
+<a href="https://jeith.neocities.org"><img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif" alt="" align="center"></a><br />
+<a href="https://github.com/Jeith/jeith/issues"><strong>See my non-professional personal website!</strong></a>
 </div>
 
 <hr>
