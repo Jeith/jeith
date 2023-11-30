@@ -8,25 +8,24 @@ to my personal GitHub profile!
 </div>
 <br />
 
+<div align="center">
 <table width="960px">
 <tr>
-<td valign="top" width="50%">
+<td align="center" valign="top" width="50%">
 
-<div align="center"><a href="https://portfolio.jeith.com"><img src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif" alt="" align="center"></a><br /><br />
+<a href="https://portfolio.jeith.com"><img src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif" alt="" align="center"></a><br /><br />
 <a href="https://portfolio.jeith.com"><strong>Visit my portfolio</strong></a>
-</div>
 
 </td>
-<td valign="top" width="50%">
+<td align="center" valign="top" width="50%">
 
-<div align="center">
 <a href="https://jeith.neocities.org"><img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif" alt="" align="center"></a><br />
 <a href="https://github.com/Jeith/jeith/issues"><strong>See my non-professional personal website!</strong></a>
-</div>
 
 </td>
 </tr>
 </table>
+</div>
 
 <div align="center">
 <div>
