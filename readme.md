@@ -20,7 +20,7 @@ to my personal GitHub profile!
 <td align="center" valign="top" width="50%"><br />
 
 <a href="https://jeith.neocities.org"><img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif" alt="" align="center"></a><br />
-<a href="https://github.com/Jeith/jeith/issues"><strong>See my non-professional personal website!</strong></a>
+<a href="https://jeith.neocities.org"><strong>See my non-professional personal website!</strong></a>
 
 </td>
 </tr>
