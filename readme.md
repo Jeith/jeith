@@ -13,8 +13,14 @@ to my personal GitHub profile!
 <tr>
 <td align="center" valign="top" width="50%">
 
-<a href="https://jeith.com"><img src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif" alt="" align="center"></a><br /><br />
-<a href="https://jeith.com"><strong>Check out my personal website</strong></a>
+<a href="https://portfolio.jeith.com"><img src="https://github.com/Jeith/jeith/blob/main/public/assets/readme/globe.gif" alt="" align="center"></a><br /><br />
+<a href="https://portfolio.jeith.com"><strong>Check out my portfolio</strong></a>
+
+</td>
+<td align="center" valign="top" width="50%"><br />
+
+<a href="https://jeith.neocities.org"><img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/book.gif" alt="" align="center"></a><br />
+<a href="https://jeith.neocities.org"><strong>See my non-professional personal website!</strong></a>
 
 </td>
 </tr>
