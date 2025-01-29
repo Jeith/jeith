@@ -1,0 +1,1284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+// ~~~~~~~~~~~~~~~~ VARS ~~~~~~~~~~~~~~~~
+$mustard-yellow: #F6CA10;
+$red: #E73A2A;
+$orange: #FC8300;
+$blue: #355CB0;
+$teal: #6CCEAF;
+
+// ~~~~~~~~~~~~~~~~ FONTS ~~~~~~~~~~~~~~~~
+html { font-family: "Inter", "system-ui"; }
+ 
+@supports (font-variation-settings: normal) {
+  html { font-family: "Inter", "system-ui"; }
+}
+
+// ~~~~~~~~~~~~~~~~ MIXINS ~~~~~~~~~~~~~~~~
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  -moz-align-items: $align;
+  -ms-align-items: $align;
+  align-items: $align;
+}
+
+@mixin animation($animation, $duration, $timing-function: false, $delay: false, $direction: false, $iteration-count: false) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-name: $animation;
+  -webkit-animation-direction: $direction;
+  -webkit-animation-timing-function: $timing-function;
+  -webkit-animation-iteration-count: $iteration-count;
+
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-name: $animation;
+  -moz-animation-direction: $direction;
+  -moz-animation-timing-function: $timing-function;
+  -moz-animation-iteration-count: $iteration-count;
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-direction: $direction;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: $iteration-count;
+}
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+}
+
+@mixin display-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+@mixin justify-content($value) {
+  -webkit-justify-content: $value;
+  justify-content: $value;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -ms-transform: $val;
+  transform: $val;
+}
+
+@mixin transition($val...) {
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -o-transition: $val;
+  -ms-transition: $val;
+  transition: $val;
+}
+
+@mixin user-select($val) {
+  -webkit-user-select: $val;
+  -moz-user-select: $val;
+  -ms-user-select: $val;
+  user-select: $val;
+}
+
+// ~~~~~~~~~~~~~~~~ KEYFRAMES ~~~~~~~~~~~~~~~~
+@keyframes bobble-1 {
+  0% {
+    transform: translate3d(0px, 0px, 0px) rotate(17deg);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translate3d(-25px, -25px, 0px) rotate(17deg);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotate(17deg);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating-counter-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes color-flash {
+  0% {
+    color: $mustard-yellow;
+  }
+  25% {
+    color: $orange;
+  }
+  50% {
+    color: $red;
+  }
+  75%{
+    color: $blue;
+  }
+  100% {
+    color: $teal;
+  }
+}
+
+@keyframes rotate-and-stop {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate-and-stop-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-65deg);
+  }
+}
+
+@keyframes squish-1 {
+  0% {
+    transform: translate3d(0, 0, 0);
+    height: 15px;
+    width: 25px;
+  }
+  50% {
+    transform: translate3d(-5px, 0, 0);
+    height: 25px;
+    width: 15px;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    height: 15px;
+    width: 25px;
+  }
+}
+@keyframes disappearing-color-change-1 {
+  0% {
+    background-color: $orange;
+    height: 35px;
+    width: 35px;
+  }
+  25% {
+    background-color: $orange;
+    height: 0;
+    width: 0;
+    transform: translateY(15px);
+  }
+  26% {
+    background-color: $teal;
+    height: 0;
+    width: 0;
+  }
+  50% {
+    background-color: $teal;
+    height: 35px;
+    width: 35px;
+  }
+  75% {
+    background-color: $teal;
+    height: 0;
+    width: 0;
+    transform: translateX(25px);
+  }
+  76% {
+    background-color: $orange;
+    height: 0;
+    width: 0;
+  }
+  100% {
+    background-color: $orange;
+    height: 35px;
+    width: 35px;
+  }
+}
+@keyframes disappearing-color-change-2 {
+  0% {
+    background-color: $orange;
+    height: 35px;
+    width: 35px;
+  }
+  25% {
+    background-color: $teal;
+    height: 0;
+    width: 0;
+    transform: translate3d(15px, 0, 0);
+  }
+  50% {
+    background-color: $teal;
+    height: 35px;
+    width: 35px;
+  }
+  75% {
+    background-color: $teal;
+    height: 0;
+    width: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+  100% {
+    background-color: $orange;
+    height: 35px;
+    width: 35px;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+// ~~~~~~~~~~~~~~~~ GENERAL ~~~~~~~~~~~~~~~~
+@charset "UTF-8";
+html, body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-weight: unset;
+}
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  width: 100%;
+}
+h2, h3, h4, span{
+  display: inline;
+  background-color: black;
+  color: white;
+}
+h2{
+  padding-bottom: 3px;
+  margin-left: 20px;
+  font-size: 33px;
+  font-weight: 700;
+  z-index: 1;
+
+  &:before{
+    content: "";
+    background-color: black;
+    transform: skewX(-25deg);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -3%;
+    width: 106%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+span {
+  font: inherit;
+}
+section {
+  width: 100%;
+  padding: 60px;
+}
+.hide,
+.hidden {
+  display: none !important;
+}
+.img-wrapper{
+  img{
+    width: 100%;
+  }
+}
+body {
+  .background-shapes{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .rectangle{
+    transform: rotate(45deg);
+    height: 25px;
+    width: 25px;
+
+    &-1{
+      background-color: $red;
+      transform: rotate(45deg);
+      position: absolute;
+      right: 18%;
+      top: 12%;
+      height: 15px;
+    }
+    &-2{
+      background-color: $red;
+      transform: rotate(-60deg);
+      position: absolute;
+      left: 27%;
+      bottom: 15%;
+      width: 15px;
+    }
+    &-3{
+      background-color: $red;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 9%;
+      top: 6%;
+      width: 15px;
+    }
+    &-4{
+      background-color: $teal;
+      transform: rotate(45deg);
+      position: absolute;
+      right: 9%;
+      bottom: 22%;
+      width: 15px;
+    }
+    &-5{
+      background-color: $teal;
+      transform: rotate(74deg);
+      position: absolute;
+      left: 38%;
+      top: 12%;
+      width: 15px;
+    }
+    &-6{
+      background-color: $teal;
+      transform: rotate(74deg);
+      position: absolute;
+      left: 48%;
+      bottom: 0%;
+      width: 15px;
+    }
+  }
+  .square{
+    @include transition(all .25s ease-in-out);
+    height: 65px;
+    width: 65px;
+
+    &.sm{
+      width: 50px;
+      height: 50px;
+    }
+
+    &-1{
+      @include animation(rotating-counter-clockwise, 60s, $timing-function: linear, $iteration-count: infinite);
+      background-color: $red;
+      transform: rotate(-3deg);
+      position: absolute;
+      right: 35%;
+      bottom: 20%;
+    }
+    &-2{
+      @include animation(rotate-and-stop-2, 10s, $timing-function: ease-in-out, $iteration-count: 1);
+      background-color: $red;
+      transform: rotate(-65deg);
+      position: absolute;
+      left: 20%;
+      top: 21%;
+    }
+    &-3{
+      background-color: $teal;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 9%;
+      bottom: 6%;
+    }
+    &-4{
+      @include animation(rotate-and-stop, 10s, $timing-function: ease-in-out, $iteration-count: 1);
+      background-color: $red;
+      transform: rotate(45deg);
+      position: absolute;
+      right: 3%;
+      top: 29%;
+    }
+    &-5{
+      @include animation(rotating, 60s, $timing-function: linear, $iteration-count: infinite);
+      background-color: $orange;
+      transform: rotate(-24deg);
+      position: absolute;
+      right: 36%;
+      top: -2%
+    }
+    &-6{
+      @include animation(rotating, 60s, $timing-function: linear, $iteration-count: infinite);
+      background-color: $orange;
+      transform: rotate(-33deg);
+      position: absolute;
+      left: -1%;
+      top: 47%;
+    }
+    &-7{
+      @include animation(bobble-1, 21s, $timing-function:ease-in-out, $iteration-count:infinite);
+      background-color: $teal;
+      position: absolute;
+      right: 22%;
+      top: 37%;
+    }
+    &-8{
+      @include animation(bobble-1, 21s, $timing-function:ease-in-out, $iteration-count:infinite);
+      background-color: $teal;
+      position: absolute;
+      right: 0%;
+      bottom: 4%;
+    }
+    &-9{
+      @include animation(rotating, 60s, $timing-function: linear, $iteration-count: infinite);
+      background-color: $orange;
+      transform: rotate(-24deg);
+      position: absolute;
+      right: 58%;
+      top: 0%;
+    }
+  }
+  .circle{
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+
+    &-1{
+      background-color: $orange;
+      position: absolute;
+      right: 17%;
+      bottom: 5%;
+    }
+    &-2{
+      // @include animation(disappearing-color-change-1, 10s, $timing-function: linear, $iteration-count: infinite);
+      background-color: $orange;
+      position: absolute;
+      left: 17%;
+      bottom: 32%;
+    }
+    &-3{
+      // @include animation(bobble-1, 30s, $timing-function:ease-in-out, $iteration-count:infinite);
+      background-color: $red;
+      position: absolute;
+      left: 48%;
+      top: 22%;
+    }
+    &-4{
+      @include animation(bobble-1, 28s, $timing-function:ease-in-out, $iteration-count:infinite);
+      background-color: $teal;
+      position: absolute;
+      left: 6%;
+      top: 22%;
+    }
+    &-5{
+      background-color: $orange;
+      position: absolute;
+      right: 11%;
+      bottom: 40%;
+      width: 60px;
+      height: 60px;
+    }
+    &-6{
+      @include transition(all .25s ease-in-out);
+      background-color: $teal;
+      transform: rotate(45deg);
+      position: absolute;
+      right: 2%;
+      top: 1%;
+      height: 74px;
+    }
+    &-7{
+      @include transition(all .25s ease-in-out);
+      background-color: $teal;
+      transform: rotate(-13deg);
+      position: absolute;
+      left: 41%;
+      bottom: 26%;
+      width: 65px;
+    }
+    &-8{
+      background-color: $orange;
+      transform: rotate(-13deg);
+      position: absolute;
+      left: 52%;
+      bottom: 10%;
+    }
+  }
+  .curved{
+    border-radius: 5px;
+  }
+
+  &.home {
+    @include transition(all .25s ease-in-out);
+    max-height: 100vh;
+    overflow: hidden;
+
+    &.loaded{
+      max-height: 100%;
+      overflow: initial;
+      overflow-x: hidden;
+
+      .hero {
+        &:after{
+          opacity: 0;
+        }
+      }
+    }
+
+    &.dark-mode{
+      .square{
+        &-3{
+          background-color: $blue;
+        }
+        &-7{
+          background-color: $blue;
+        }
+        &-8{
+          background-color: $blue;
+        }
+      }
+      .rectangle{
+        &-1{
+          background-color: $blue;
+        }
+        &-4{
+          background-color: $blue;
+        }
+        &-5{
+          background-color: $blue;
+        }
+        &-6{
+          background-color: $blue;
+        }
+      }
+      .circle{
+        &-4{
+          background-color: $blue;
+        }
+        &-6{
+          background-color: $blue;
+        }
+        &-7{
+          background-color: $blue;
+        }
+      }
+      .hero {
+        background-color: #000000;
+      }
+      .about-me{
+        background-color: #000000;
+
+        .section-wrapper{
+          background-color: $red;
+          border-radius: 25px;
+
+          .img-wrapper{
+            &:before{
+              background-color: black;
+            }
+          }
+        }
+      }
+      .project-section{
+        background-color: $red;
+
+        .project{
+          border-color: black;
+          .image-container{
+            &:before{
+              background-color: black;
+            }
+          }
+        }
+      }
+    }
+    .hero {
+      @include display-flex;
+      @include justify-content(center);
+      @include align-items(center);
+      @include transition(all .25s ease-in-out);
+      background-color: $mustard-yellow;
+      padding: 15px;
+      min-height: 100vh;
+      min-width: calc(100vw - 30px);
+
+      &:after{
+        content: "";
+        @include transition(all .25s ease-in-out);
+        pointer-events: none;
+        background-color: $mustard-yellow;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        z-index: 15;
+      }
+
+      h1{
+        @include transition(all .4s ease-in-out);
+        @include user-select(none);
+        cursor: default;
+        text-align: center;
+        color: $mustard-yellow;
+        font-size: 225px;
+        font-weight:700;
+        text-shadow: 0px 0px 10px rgba(231,58,42,.4);
+        padding: 0 10px;
+        width: 70px;
+        overflow: hidden;
+        
+        &.reveal{
+          color: white;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .about-me{
+    @include display-flex;
+    @include justify-content(center);
+    @include transition(all .25s ease-in-out);
+    background-color: $mustard-yellow;
+
+    .section-wrapper{
+      @include display-flex;
+      @include justify-content(space-between);
+      @include flex-wrap(wrap);
+      max-width: 1700px;
+      background-color: $orange;
+      border-top: none;
+      padding: 60px 60px 50px 60px;
+
+      &:after{
+        content: "";
+        @include box-shadow(-1px 0px 9px -1px rgba(232, 58, 42, .5));
+        pointer-events: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    span{
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 500;
+      
+      &:before{
+        content: "";
+        width: 100%;
+        height: 15px;
+        display: block;
+      }
+      a{
+        background: black;
+        color: white;
+        display: inline;
+        text-decoration: none;
+        font-weight: 700;
+      }
+    }
+    .textbox{
+      display: inline;
+      width: 60%;
+    }
+    .img-wrapper{
+      width: 25%;
+      height: fit-content;
+      block-size: fit-content;
+      cursor: pointer;
+
+      &:before{
+        content: "";
+        @include transition(all .25s ease-in-out);
+        background-color: $red;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        width: 100%;
+        height: 100%;
+      }
+      img{
+        @include transition(all .25s ease-in-out);
+      }
+      &:hover{
+        &:before{
+          border-radius: 15px;
+          top: -15px;
+          left: -15px;
+          width: calc(100% + 30px);
+          height: calc(100% + 30px);
+        }
+        img{
+          border-radius: 15px;
+        }
+      }
+    }
+    .technologies{
+      padding-top: 40px;
+    }
+  }
+  .technologies-container{
+    @include display-flex;
+    @include flex-wrap(wrap);
+    padding-top: 20px;
+
+    .technology{
+      @include display-flex;
+      @include flex-direction(column);
+      @include justify-content(center);
+      @include align-items(center);
+      background: black;
+      padding: 5px 10px;
+      margin: 0px 20px 10px 0;
+
+      &#css{
+        &:hover{
+          @include animation(rotating-counter-clockwise, 1s, $timing-function: linear, $iteration-count: infinite);
+        }
+      }
+      &#sass{
+        &:hover{
+          p{
+            @include animation(color-flash, 1s, $timing-function: ease-in-out, $iteration-count: infinite);
+          }
+        }
+      }
+
+      p{
+        font-weight: 700;
+        color: white;
+        text-align: center;
+
+        &.orange{
+          color: $orange;
+        }
+        &.blue{
+          color: #718CC7;
+        }
+        &.yellow{
+          color: $mustard-yellow;
+        }
+        &.teal{
+          color: $teal;
+        }
+        &.red{
+          color: $red;
+        }
+      }
+    }
+  }
+  .project-section{
+    @include display-flex;
+    @include justify-content(center);
+    @include box-shadow(-1px 0px 9px -1px rgba(232, 58, 42, .5));
+    padding: 60px 110px 110px;
+    background-color: $orange;
+
+    .section-wrapper{
+      @include display-flex;
+      @include flex-direction(column);
+      @include align-items(center);
+      max-width: 1700px;
+    }
+
+    h2{
+      width: 127px;
+      margin-left: -10px;
+
+      &:before{
+        left: -17px;
+        padding: 0 10px;
+        width: 116%;
+      }
+    }
+
+    .project{
+      @include display-flex;
+      @include justify-content(space-between);
+      @include flex-wrap(wrap);
+      margin-top: 115px;
+      border-right: 25px solid $red;
+      padding-right: 25px;
+
+      &.first{
+        margin-top: 80px;
+      }
+      &.reverse{
+        @include flex-direction(row-reverse);
+        border-left: 25px solid $red;
+        border-right: none;
+        padding-right: 0;
+        padding-left: 25px;
+
+        .image-container{
+          &:before{
+            left: 15px;
+            border-radius: 0 0 25px 0;
+          }
+        }
+        .text {
+          h3 {
+            border-radius: 90px 100px 80px 35px;
+          }
+        }
+      }
+      .image-container{
+        width: 47%;
+        height: 20vw;
+
+        &:before{
+          content: "";
+          @include transition(all .25s ease-in-out);
+          background-color: $red;
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          width: 100%;
+          height: 100%;
+          border-radius: 0 0 0 25px;
+        }
+      }
+      .image-wrapper{
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        &:before{
+          content: "";
+          @include transition(all .25s ease-in-out);
+          background-color: $red;
+          position: absolute;
+          top: 10px;
+          left: 15px;
+          width: 100%;
+          height: 100%;
+        }
+
+        img{
+          width: 100%;
+        }
+      }
+      .text{
+        display: inline;
+        width: 47%;
+
+        h3{
+          @include transition(all .25s ease-in-out);
+          width: 100%;
+          font-size: 26px;
+          font-weight: 700;
+          padding: 5px 13px;
+          border-radius: 90px 100px 35px 80px;
+        }
+        a{
+          text-decoration: none;
+          width: 100%;
+          display: block;
+          margin-bottom: 15px;
+          cursor: pointer;
+        }
+        #jeith {
+          display: block;
+          margin-bottom: 15px;
+          cursor: pointer;
+          background: transparent;
+        }
+        span{
+          margin-top: 15px;
+          display: inline;
+          line-height: 22px;
+
+          a{
+            background: black;
+            color: white;
+            display: inline;
+            text-decoration: none;
+            font-weight: 700;
+          }
+        }
+      }
+      .technologies-container{
+        padding-top: 15px;
+      }
+    }
+  }
+}
+
+footer {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  cursor: pointer;
+  background-color: black;
+  padding: 25px 35px;
+
+  i{
+    font-size: 24px;
+    color: white;
+  }
+
+  h4{
+     text-align: center;
+     font-weight: 700;
+     font-size: 16px;
+   }
+}
+
+
+@media all and (min-width: 1920px) {
+  body{
+    &.home {
+      .hero {
+        h1{
+          font-size: 300px;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1279px) {
+}
+@media all and (max-width: 1139px) {
+  body{
+    &.home {
+      .about-me{
+        .section-wrapper{
+          h2{
+            font-size: 26px;
+          }
+          
+          .technologies{
+            h2{
+              font-size: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1023px) {
+  body{
+    &.home {
+      .hero {
+        h1{
+          font-size: 175px;
+          width: 55px;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 900px) {
+  body {
+    &.home {
+      .about-me{
+        .section-wrapper{
+          @include align-items(center);
+          @include justify-content(center);
+          @include flex-direction(column-reverse);
+          padding: 35px 35px 25px 35px;
+          
+          h2{
+            font-size: 26px;
+          }
+          
+          .technologies{
+            padding-top: 30px;
+
+            h2{
+              font-size: 26px;
+            }
+          }
+        }
+
+        .textbox{
+          width: 100%;
+        }
+        .img-wrapper{
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+          border-radius: 50%;
+          margin-bottom: 30px;
+
+          img {
+            width: calc(100% + 50px);
+            left: -24px;
+          }
+        }
+      }
+    }
+    .project-section{
+      padding: 60px;
+  
+      .project{
+        @include flex-direction(column-reverse);
+        padding-right: 60px;
+
+        &.reverse{
+          @include flex-direction(column-reverse);
+          padding-left: 60px;
+        }
+
+        .image-container{
+          width: 100%;
+          height: 40vw;
+          margin-top: 50px;
+
+          &:before{
+            top: -15px;
+            height: calc(100% + 15px);
+            border-radius: 0 0 0 15px;
+          }
+        }
+        .text{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 767px) {
+  body {
+    &.home {
+      .project-section{
+        .image-container{
+          height: 37vw;
+        }
+      }
+      .about-me{
+        .section-wrapper{
+          padding: 40px;
+
+          .technologies {
+            width: calc(100% + 29px);
+            
+            h2 {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 639px) {
+  body {
+    &.home {
+      .about-me{
+        padding: 20px;
+        .section-wrapper{
+          h2{
+            font-size: 27px;
+          }
+        }
+        .img-wrapper {
+          width: 125px;
+          height: 125px;
+
+          img {
+            top: -6px;
+          }
+        }
+      }
+      .project-section{
+        .image-container{
+          height: 34vw;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 500px) {
+  body {
+    .circle-7{
+      display: none;
+    }
+    &.home {
+      .hero {
+        h1{
+          font-size: 130px;
+          width: 44px;
+        }
+      }
+      .project-section{
+        .project{
+          width: 100%;
+
+          h3{
+            font-size: 20px;
+          }
+        }
+        .image-container{
+          height: 42vw;
+        }
+      }
+      .about-me{
+        .section-wrapper{
+          padding: 25px 15px 15px;
+
+          .img-wrapper{
+            &:before{
+              left: 10px;
+            }
+            &:hover{
+              &:before{
+                top: -10px;
+                left: -10px;
+                width: calc(100% + 20px);
+                height: calc(100% + 20px);
+              }
+            }
+          }
+
+          h2{
+            font-size: 20px;
+            margin-left: calc(20px - 2%);
+          }
+          .technologies{
+            padding-top: 20px;
+            width: 100%;
+
+
+            h2{
+              font-size: 20px;
+            }
+            p{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+    .project-section{  
+      padding: 25px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+      .project{
+        padding-right: 25px;
+
+        &.first{
+          margin-top: 60px;
+        }
+
+        &.reverse{
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 400px){
+  body{
+    &.home {
+      .hero {
+        h1{
+          font-size: 110px;
+          width: 40px;
+        }
+      }
+      .about-me{
+        .section-wrapper{
+          padding: 20px 15px 11px;
+          h2{
+            font-size: 20px;
+            margin-left: 10px;
+          }
+
+          p{
+            font-size: 14px;
+          }
+
+          span {
+            font-size: 15px;
+            line-height: 23px;
+          }
+
+          .technologies{
+            .technology{
+              margin: 0px 11px 9px 0;
+            }
+            h2{
+              font-size: 16px;
+              margin-left: 10px;
+            }
+            p{
+              font-size: 14px;
+            }
+          }
+        }
+        .img-wrapper {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 20px;
+
+          img {
+            width: calc(100% + 35px);
+            left: -18px;
+            top: -6px;
+          }
+        }
+      }
+      .project-section {
+        .project {
+          .text {
+            span {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .technologies-container {
+        .technology {
+          p {
+            font-size: 14px;
+
+            &.technology-heading {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
