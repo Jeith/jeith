@@ -117,7 +117,7 @@ function App() {
               <h2>Hi, my name is Keith!</h2>
               <span>
                 I'm a full stack software developer living in Austin, TX. I've
-                been coding for 6+ years, and I'm most experienced in web &amp;
+                been coding for 7+ years, and I'm most experienced in web &amp;
                 mobile app development. I first started as a hobbyist developer
                 by learning how to code on my own through{" "}
                 <a
