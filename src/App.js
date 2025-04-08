@@ -117,9 +117,9 @@ function App() {
               <h2>Hi, my name is Keith!</h2>
               <span>
                 I'm a full stack software developer living in Austin, TX. I've
-                been coding for 6+ years, and I'm most experienced in web
-                &amp; mobile app development. I first started as a hobbyist
-                developer by learning how to code on my own through{" "}
+                been coding for 6+ years, and I'm most experienced in web &amp;
+                mobile app development. I first started as a hobbyist developer
+                by learning how to code on my own through{" "}
                 <a
                   rel="noreferrer"
                   href="https://www.theodinproject.com/"
@@ -183,6 +183,9 @@ function App() {
                   <p>PostgreSQL</p>
                 </div>
                 <div className="technology">
+                  <p>GraphQL</p>
+                </div>
+                <div className="technology">
                   <p>HTML5</p>
                 </div>
                 <div className="technology" id="css">
@@ -237,7 +240,8 @@ function App() {
               <span>
                 Pennystreams is the latest project that I've built. Pennystreams
                 uses APIs to get artists' Spotify play count and calculate
-                artists' Spotify payouts based on it.
+                artists' Spotify payouts based on it. API is not longer active
+                and needs to be replaced.
               </span>
               <div className="technologies-container">
                 <div className="technology">
