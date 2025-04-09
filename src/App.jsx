@@ -137,7 +137,7 @@ function App() {
                 in early 2018. I'm now working professionally as an UI engineer,
                 and I use React, Flutter, and various other technologies to
                 build web and mobile applications. Outside work, I'm interested
-                in game development and all things{" "}
+                in music and all things{" "}
                 <a
                   rel="noreferrer"
                   href="https://github.com/Jeith"
