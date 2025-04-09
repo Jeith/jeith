@@ -239,8 +239,8 @@ function App() {
               <span>
                 Pennystreams is the latest project that I've built. Pennystreams
                 uses APIs to get artists' Spotify play count and calculate
-                artists' Spotify payouts based on it. API is not longer active
-                and needs to be replaced.
+                artists' Spotify payouts based on it. (API is not longer active
+                and needs to be replaced.)
               </span>
               <div className="technologies-container">
                 <div className="technology">
