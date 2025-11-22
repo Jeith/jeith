@@ -37,12 +37,6 @@ to my personal GitHub profile!
 <br />
 
 <div align="center">
-<img src="https://profile-counter.glitch.me/jeith/count.svg" alt="hit counter" align="center">
-</div>
-
-<br />
-
-<div align="center">
 <img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/paws.png" alt="Made with my own two paws" height="30" />
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>  
 <img src="https://raw.githubusercontent.com/Jeith/jeith/main/public/assets/readme/ie_logo.gif" alt="Microsoft Internet Explorer" />
