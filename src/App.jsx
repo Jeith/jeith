@@ -273,10 +273,10 @@ function App() {
 
             <div className="text">
               <span onClick={() => toggleColorTheme()} id="jeith">
-                <h3>My Portfolio!</h3>
+                <h3>My Portfolio</h3>
               </span>
               <span>
-                This is my latest portfolio. This website is built with React
+                This is the site you're on! It's built with React
                 and hosted via Cloudflare Pages.
               </span>
               <div className="technologies-container">
