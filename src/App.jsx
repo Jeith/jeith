@@ -3,8 +3,9 @@ import mii from "./assets/images/mii.png";
 import miiBlinking from "./assets/images/mii-blinking.png";
 import pennystreams from "./assets/images/projects/pennystreams.png";
 import jeith from "./assets/images/projects/jeith.png";
-import paletteCenter from "./assets/images/projects/the-palette-center.png";
+// import paletteCenter from "./assets/images/projects/the-palette-center.png";
 import heroRPG from "./assets/images/projects/hero-rpg.png";
+import arrowUp from "./assets/images/arrow-up-solid-full.svg";
 
 function App() {
   let [h1Classname, setH1Classname] = useState("");
@@ -292,7 +293,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="project">
+          {/* <div className="project">
             <div className="image-container">
               <div className="image-wrapper">
                 <img
@@ -336,8 +337,8 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="project reverse">
+          </div> */}
+          <div className="project">
             <div className="image-container">
               <div className="image-wrapper">
                 <img
@@ -383,7 +384,7 @@ function App() {
       </section>
 
       <footer onClick={() => scrollToTop()}>
-        <i className="fas fa-arrow-up"></i>
+        <img src={arrowUp} alt="Back to top" className="footer-icon" />
         <h4>Back to top</h4>
       </footer>
     </React.Fragment>
